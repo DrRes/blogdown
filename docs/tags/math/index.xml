@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on A Notebook</title>
-    <link>https://drres.github.io/blogdown/tags/math/</link>
+    <link>/blogdown/tags/math/</link>
     <description>Recent content in Math on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://drres.github.io/blogdown/tags/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/blogdown/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Math Sample</title>
-      <link>https://drres.github.io/blogdown/post/2017-03-05-math-sample/</link>
+      <link>/blogdown/post/2017-03-05-math-sample/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://drres.github.io/blogdown/post/2017-03-05-math-sample/</guid>
+      <guid>/blogdown/post/2017-03-05-math-sample/</guid>
       <description>&lt;p&gt;KaTeX can be used to generate complex math formulas server-side.&lt;/p&gt;
 
 &lt;p&gt;$$

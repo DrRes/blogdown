@@ -2,13 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on A Notebook</title>
-    <link>https://drres.github.io/blogdown/categories/</link>
+    <link>/blogdown/categories/</link>
     <description>Recent content in Categories on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     
-	<atom:link href="https://drres.github.io/blogdown/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/blogdown/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Github</title>
+      <link>/blogdown/categories/github/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blogdown/categories/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Try</title>
+      <link>/blogdown/categories/try/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blogdown/categories/try/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
