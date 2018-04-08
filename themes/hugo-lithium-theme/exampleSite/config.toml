@@ -1,13 +1,10 @@
-baseurl = "https://drres.github.io/blogdown/"
-languageCode = "ja-jp"
-title = "A Notebook of a Resident"
+baseurl = "/"
+languageCode = "en-us"
+title = "A Hugo website"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-relativeurls = true
-publishDir = "docs"
-hasCJKLanguage = true
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
