@@ -2,84 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on A Notebook</title>
-    <link>/blogdown/tags/</link>
+    <link>https://drres.github.io/blogdown/tags/</link>
     <description>Recent content in Tags on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Tue, 07 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blogdown/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://drres.github.io/blogdown/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bigimg</title>
-      <link>/blogdown/tags/bigimg/</link>
+      <link>https://drres.github.io/blogdown/tags/bigimg/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/tags/bigimg/</guid>
+      <guid>https://drres.github.io/blogdown/tags/bigimg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>/blogdown/tags/code/</link>
+      <link>https://drres.github.io/blogdown/tags/code/</link>
       <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/tags/code/</guid>
+      <guid>https://drres.github.io/blogdown/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Example</title>
-      <link>/blogdown/tags/example/</link>
+      <link>https://drres.github.io/blogdown/tags/example/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/tags/example/</guid>
+      <guid>https://drres.github.io/blogdown/tags/example/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>/blogdown/tags/markdown/</link>
+      <link>https://drres.github.io/blogdown/tags/markdown/</link>
       <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/tags/markdown/</guid>
+      <guid>https://drres.github.io/blogdown/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Math</title>
-      <link>/blogdown/tags/math/</link>
+      <link>https://drres.github.io/blogdown/tags/math/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/tags/math/</guid>
+      <guid>https://drres.github.io/blogdown/tags/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Photoswipe</title>
-      <link>/blogdown/tags/photoswipe/</link>
+      <link>https://drres.github.io/blogdown/tags/photoswipe/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/tags/photoswipe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Try1</title>
-      <link>/blogdown/tags/try1/</link>
-      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/blogdown/tags/try1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Try2</title>
-      <link>/blogdown/tags/try2/</link>
-      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/blogdown/tags/try2/</guid>
+      <guid>https://drres.github.io/blogdown/tags/photoswipe/</guid>
       <description></description>
     </item>
     
