@@ -1,0 +1,7 @@
+baseURL = "https://drres.github.io/blogdown/"
+relativeurls = true
+publishDir = "docs"
+hasCJKLanguage = true
+languageCode = "ja-jp"
+title = "A Notebook of a resident"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
