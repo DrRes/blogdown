@@ -108,8 +108,71 @@ kable(OPQRST)</code></pre>
 <div id="quality" class="section level3">
 <h3>Quality</h3>
 <ul>
-<li><p>刺されるような / 裂かれるような / ぎゅーっと / むかむか / 布団が乗っているような</p></li>
-<li><p>増悪傾向 / 寛解傾向</p></li>
+<li>刺されるような / 裂かれるような / ぎゅーっと / むかむか / 布団が乗っているような</li>
+</ul>
+</div>
+<div id="region" class="section level3">
+<h3>Region</h3>
+<ul>
+<li>関連痛をclosedで聞いていく。
+<ul>
+<li>右肩とか、首周りとか痛みませんか？</li>
+</ul></li>
+<li>こっちが本当の原因部位かも</li>
+</ul>
+</div>
+<div id="palliative-provocative" class="section level3">
+<h3>Palliative / Provocative</h3>
+<ul>
+<li>closedでアタック。実際にやってもらう。</li>
+</ul>
+<pre class="r"><code>p &lt;- tibble(Disesase = c(&quot;イレウス&quot;, &quot;腹水&quot;, &quot;急性膵炎&quot;, &quot;横隔膜周辺の炎症&quot;, &quot;胸膜周辺の炎症&quot;, &quot;食堂破裂&quot;),
+            ToDo = c(&quot;吐くと楽に&quot;, &quot;少しでも身体を起こすと楽に&quot;, &quot;四つん這いが一番楽&quot;, &quot;深呼気で増悪&quot;, &quot;深呼気で増悪&quot;, &quot;嚥下で強い痛み&quot;))
+
+kable(p)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Disesase</th>
+<th align="left">ToDo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">イレウス</td>
+<td align="left">吐くと楽に</td>
+</tr>
+<tr class="even">
+<td align="left">腹水</td>
+<td align="left">少しでも身体を起こすと楽に</td>
+</tr>
+<tr class="odd">
+<td align="left">急性膵炎</td>
+<td align="left">四つん這いが一番楽</td>
+</tr>
+<tr class="even">
+<td align="left">横隔膜周辺の炎症</td>
+<td align="left">深呼気で増悪</td>
+</tr>
+<tr class="odd">
+<td align="left">胸膜周辺の炎症</td>
+<td align="left">深呼気で増悪</td>
+</tr>
+<tr class="even">
+<td align="left">食堂破裂</td>
+<td align="left">嚥下で強い痛み</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="assosiated-symptoms" class="section level3">
+<h3>assosiated Symptoms</h3>
+<ul>
+<li>closedで！
+<ul>
+<li>腹痛→嘔吐は？痛みより前から？後から？</li>
+<li>重篤そうな咽頭痛→開口制限は？息苦しさは？</li>
+</ul></li>
 </ul>
 </div>
 </div>
