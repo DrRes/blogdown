@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A Notebook</title>
-    <link>/blogdown/</link>
+    <link>https://drres.github.io/blogdown/</link>
     <description>Recent content on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 09 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blogdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://drres.github.io/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Upload New Entry</title>
-      <link>/blogdown/post/how-to-upload-new-entry/</link>
+      <link>https://drres.github.io/blogdown/post/how-to-upload-new-entry/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/post/how-to-upload-new-entry/</guid>
+      <guid>https://drres.github.io/blogdown/post/how-to-upload-new-entry/</guid>
       <description>a memo.
 on RStudio&amp;rsquo;s Console  new_post(&amp;quot;title&amp;quot;) write new posts serve_site() build_sites()  Next, move on to Terminal  git add . git commit -am &amp;quot;any comment&amp;quot; git push -u origin master  enjoy!</description>
     </item>
     
     <item>
       <title>Try</title>
-      <link>/blogdown/post/try/</link>
+      <link>https://drres.github.io/blogdown/post/try/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/post/try/</guid>
+      <guid>https://drres.github.io/blogdown/post/try/</guid>
       <description>markdown Yeah!</description>
     </item>
     
     <item>
       <title>痛みのOPQRST</title>
-      <link>/blogdown/post/opqrst-of-pain/</link>
+      <link>https://drres.github.io/blogdown/post/opqrst-of-pain/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/post/opqrst-of-pain/</guid>
+      <guid>https://drres.github.io/blogdown/post/opqrst-of-pain/</guid>
       <description>概要 #knitr_options() library(tidyverse) ## ─ Attaching packages ─────────────────── tidyverse 1.2.1 ─ ## ✔ ggplot2 2.2.1 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.3.0 ## ─ Conflicts ─────────</description>
     </item>
     
     <item>
       <title>About me</title>
-      <link>/blogdown/page/about/</link>
+      <link>https://drres.github.io/blogdown/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/page/about/</guid>
+      <guid>https://drres.github.io/blogdown/page/about/</guid>
       <description>My name is Inigo Montoya. I have the following qualities:
  I rock a great mustache I&amp;rsquo;m extremely loyal to my family  What else do you need?
 my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>

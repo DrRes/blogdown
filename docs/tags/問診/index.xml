@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>問診 on A Notebook</title>
-    <link>/blogdown/tags/%E5%95%8F%E8%A8%BA/</link>
+    <link>https://drres.github.io/blogdown/tags/%E5%95%8F%E8%A8%BA/</link>
     <description>Recent content in 問診 on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 09 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blogdown/tags/%E5%95%8F%E8%A8%BA/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://drres.github.io/blogdown/tags/%E5%95%8F%E8%A8%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>痛みのOPQRST</title>
-      <link>/blogdown/post/opqrst-of-pain/</link>
+      <link>https://drres.github.io/blogdown/post/opqrst-of-pain/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/post/opqrst-of-pain/</guid>
+      <guid>https://drres.github.io/blogdown/post/opqrst-of-pain/</guid>
       <description>概要 #knitr_options() library(tidyverse) ## ─ Attaching packages ─────────────────── tidyverse 1.2.1 ─ ## ✔ ggplot2 2.2.1 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.3.0 ## ─ Conflicts ─────────</description>
     </item>
     
