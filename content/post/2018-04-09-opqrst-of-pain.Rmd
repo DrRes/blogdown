@@ -1,0 +1,62 @@
+---
+title: 痛みのOPQRST
+author: DrRes
+date: '2018-04-09'
+slug: opqrst-of-pain
+categories: ["研修"]
+tags: ["救急外来", "問診"]
+subtitle: ''
+---
+
+## 概要
+
+```{r setup}
+#knitr_options()
+library(tidyverse)
+library(pipeR)
+library(DT)
+library(data.table)
+library(DiagrammeR)
+library(knitr)
+library(rmarkdown)
+```
+
+
+```{r}
+OPQRST <- tibble(Symbol = c("O", "P", "Q", "R", "S", "T"),
+                 Discription = c("Onset", "Palliative/provocative", "Quality", "Region", "assosiated Symptoms", "Time course"))
+
+kable(OPQRST)
+```
+
+## ポイント
+
+* まず**O**と**T**を聞く！
+* Q, R, P, Sは**closed question**で攻める。
+
+### Onset 
+
+* 最重要！
+* **sudden / acute / gradual**　のいずれかを聞く。[^1]
+[^1]: 目安は、sudden:一瞬、acute:〜数十分、gradual: 〜数時間
+
+    - いつからですか？
+    - 痛くなったとき何をしていましたか？
+    - それまで痛くなかったのにいきなり「ドンッ！」ときましたか？
+    - 痛いなーと思ううちにどんどん強くなり、10分ぐらいで我慢できなくなりました？
+    
+### Time course
+
+* **持続的 / 周期的**
+    - 今より痛みが強いor少しは楽なときがありましたか？
+    - 強い痛みはどのくらい続きましたか？5分とか10分とか大体でいいので。
+    
+* **増悪 / 寛解**傾向
+    
+### Quality
+* 刺されるような / 裂かれるような / ぎゅーっと / むかむか / 布団が乗っているような
+
+
+
+* 増悪傾向 / 寛解傾向
+     

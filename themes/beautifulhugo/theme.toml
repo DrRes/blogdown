@@ -5,6 +5,7 @@ description = "A port of Beautiful Jekyll theme"
 tags = ["blog", "company", "portfolio", "projects", "minimal", "responsive"]
 features = ["blog", "themes", "disqus", "minimal", "responsive", "staticman"]
 min_version = 0.28
+uglyurl = true
 
 [author]
     name = "halogenica"
