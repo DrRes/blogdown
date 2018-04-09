@@ -70,12 +70,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.main]]
     name = "Home"
-    url = "index.html"
+    url = ""
     weight = 1
 
 [[menu.main]]
     name = "About"
-    url = "page/about.html"
+    url = "page/about/"
     weight = 3
 
 [[menu.main]]
@@ -86,16 +86,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     parent = "Samples"
     name = "Write a new entry"
-    url = "post/how-to-upload-new-entry.html"
+    url = "post/how-to-upload-new-entry/"
     weight = 1
 
 [[menu.main]]
     parent = "Samples"
     name = "痛みのOPQRST"
-    url = "post/opqrst-of-pain.html"
+    url = "post/opqrst-of-pain/"
     weight = 3
 
 [[menu.main]]
     name = "Tags"
-    url = "tags.html"
+    url = "tags/"
     weight = 3
