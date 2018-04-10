@@ -40,6 +40,24 @@ on RStudio&amp;rsquo;s Console  new_post(&amp;quot;title&amp;quot;) write new po
     </item>
     
     <item>
+      <title></title>
+      <link>https://drres.github.io/blogdown/2018-04-10-%E5%B0%A4%E5%BA%A6%E6%AF%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/2018-04-10-%E5%B0%A4%E5%BA%A6%E6%AF%94/</guid>
+      <description>定義 \[ LR+ := \frac{感度}{1-特異度} \] \[ LR- := \frac{1-感度}{特異度} \] 目安 \(\ge5, \le\frac{1}{5}\)で中くらい、 \(\ge10, \l</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://drres.github.io/blogdown/post/2018-04-10-%E5%B0%A4%E5%BA%A6%E6%AF%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/2018-04-10-%E5%B0%A4%E5%BA%A6%E6%AF%94/</guid>
+      <description>尤度比 $(document).ready(function () { window.buildTabsets(&#34;TOC&#34;); }); $(document).ready(function () { window.initializeCodeFolding(&#34;hide&#34; === &#34;show&#34;); }); .main-container { max-width: 940px; margin-left: auto; margin-right: auto; } code { color: inherit; background-color: rgba(0, 0, 0, 0.04); } img { max-width:100%; height: auto; } Code Show All Hide All 尤度比 DrRes 2018-04-10 定義 \[ LR+ := \frac{感度}{1-特異度</description>
+    </item>
+    
+    <item>
       <title>About me</title>
       <link>https://drres.github.io/blogdown/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

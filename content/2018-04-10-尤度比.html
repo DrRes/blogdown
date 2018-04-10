@@ -1,0 +1,35 @@
+---
+output:
+  rmdformats::html_clean:
+    code_folding: hide
+    self_contained: true
+    thumbnails: false
+    lightbox: false
+    md_extensions: -ascii_identifiers
+---
+
+
+
+<div class="section level2">
+<h2>定義</h2>
+<p><span class="math display">\[
+LR+ := \frac{感度}{1-特異度}
+\]</span> <span class="math display">\[
+LR- := \frac{1-感度}{特異度}
+\]</span></p>
+</div>
+<div class="section level2">
+<h2>目安</h2>
+<p><span class="math inline">\(\ge5, \le\frac{1}{5}\)</span>で中くらい、</p>
+<p><span class="math inline">\(\ge10, \le\frac{1}{10}\)</span>でとても</p>
+<p>使える指標。</p>
+</div>
+<div class="section level2">
+<h2>簡単近似計算</h2>
+<p>検査前確率が<span class="math inline">\(10\sim90\)</span>%程度なら、</p>
+<ul>
+<li><p>LR<span class="math inline">\(10, \frac{1}{10}\)</span> -&gt; <span class="math inline">\(\pm45\)</span>%</p></li>
+<li><p>LR<span class="math inline">\(5, \frac{1}{5}\)</span> -&gt; <span class="math inline">\(\pm30\)</span>%</p></li>
+<li><p>LR<span class="math inline">\(2, \frac{1}{2}\)</span> -&gt; <span class="math inline">\(\pm15\)</span>%</p></li>
+</ul>
+</div>

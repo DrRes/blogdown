@@ -37,8 +37,8 @@ kable(OPQRST)
 ### Onset 
 
 * 最重要！
-* **sudden / acute / gradual**　のいずれかを聞く。[^1]
-[^1]: 目安は、sudden:一瞬、acute:〜数十分、gradual: 〜数時間
+* **sudden / acute / gradual**　のいずれかを聞く。
+目安は、sudden:一瞬、acute:〜数十分、gradual: 〜数時間
 
     - いつからですか？
     - 痛くなったとき何をしていましたか？
@@ -67,7 +67,7 @@ kable(OPQRST)
 * closedでアタック。実際にやってもらう。
     
 ```{r}
-p <- tibble(Disesase = c("イレウス", "腹水", "急性膵炎", "横隔膜周辺の炎症", "胸膜周辺の炎症", "食堂破裂"),
+p <- tibble(Disesase = c("イレウス", "腹水", "急性膵炎", "横隔膜周辺の炎症", "胸膜周辺の炎症", "食道破裂"),
             ToDo = c("吐くと楽に", "少しでも身体を起こすと楽に", "四つん這いが一番楽", "深呼気で増悪", "深呼気で増悪", "嚥下で強い痛み"))
 
 knitr::kable(p)

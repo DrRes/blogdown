@@ -1,0 +1,61 @@
+---
+output:
+  rmdformats::html_clean:
+    code_folding: hide
+    self_contained: true
+    thumbnails: false
+    lightbox: false
+    md_extensions: -ascii_identifiers
+---
+
+---
+title: 尤度比
+author: DrRes
+date: '2018-04-10'
+slug: likelyhood-ratio
+categories: ["研修"]
+tags: ["Tips"]
+subtitle: ''
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(pipeR)
+library(DT)
+library(data.table)
+library(DiagrammeR)
+library(knitr)
+library(rmarkdown)
+library(blogdown)
+```
+
+## 定義
+
+$$
+LR+ := \frac{感度}{1-特異度}
+$$
+$$
+LR- := \frac{1-感度}{特異度}
+$$
+
+
+## 目安
+
+$\ge5, \le\frac{1}{5}$で中くらい、
+
+$\ge10, \le\frac{1}{10}$でとても
+
+使える指標。
+
+## 簡単近似計算
+
+検査前確率が$10\sim90$%程度なら、
+
+* LR$10, \frac{1}{10}$ -> $\pm45$%
+
+* LR$5, \frac{1}{5}$ -> $\pm30$%
+
+* LR$2, \frac{1}{2}$ -> $\pm15$%
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/tips/</link>
+    <description>Recent content in Tips on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 10 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>尤度比</title>
+      <link>https://drres.github.io/blogdown/post/likelyhood-ratio/</link>
+      <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/likelyhood-ratio/</guid>
+      <description>定義 \[ LR+ := \frac{感度}{1-特異度} \] \[ LR- := \frac{1-感度}{特異度} \] 目安 \(\ge5, \le\frac{1}{5}\)で中くらい、 \(\ge10, \l</description>
+    </item>
+    
+  </channel>
+</rss>
