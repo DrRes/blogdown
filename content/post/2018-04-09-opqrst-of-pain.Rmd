@@ -10,8 +10,8 @@ subtitle: ''
 
 ## 概要
 
-```{r setup}
-#knitr_options()
+```{r setup include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 library(tidyverse)
 library(pipeR)
 library(DT)
@@ -70,13 +70,11 @@ kable(OPQRST)
 p <- tibble(Disesase = c("イレウス", "腹水", "急性膵炎", "横隔膜周辺の炎症", "胸膜周辺の炎症", "食堂破裂"),
             ToDo = c("吐くと楽に", "少しでも身体を起こすと楽に", "四つん這いが一番楽", "深呼気で増悪", "深呼気で増悪", "嚥下で強い痛み"))
 
-kable(p)
+knitr::kable(p)
 ```
-    
+
 ### assosiated Symptoms
 
 * closedで！
     - 腹痛→嘔吐は？痛みより前から？後から？
     - 重篤そうな咽頭痛→開口制限は？息苦しさは？
-    
-    
