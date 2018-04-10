@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>研修 on A Notebook</title>
-    <link>/blogdown/categories/%E7%A0%94%E4%BF%AE/</link>
+    <link>https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/</link>
     <description>Recent content in 研修 on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 09 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blogdown/categories/%E7%A0%94%E4%BF%AE/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>痛みのOPQRST</title>
-      <link>/blogdown/post/opqrst-of-pain/</link>
+      <link>https://drres.github.io/blogdown/post/opqrst-of-pain/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blogdown/post/opqrst-of-pain/</guid>
-      <description>概要 #knitr_options() library(tidyverse) ## ─ Attaching packages ─────────────────── tidyverse 1.2.1 ─ ## ✔ ggplot2 2.2.1 ✔ purrr 0.2.4 ## ✔ tibble 1.4.2 ✔ dplyr 0.7.4 ## ✔ tidyr 0.8.0 ✔ stringr 1.3.0 ## ✔ readr 1.1.1 ✔ forcats 0.3.0 ## ─ Conflicts ─────────</description>
+      <guid>https://drres.github.io/blogdown/post/opqrst-of-pain/</guid>
+      <description>概要 Symbol Discription O Onset P Palliative/provocative Q Quality R Region S assosiated Symptoms T Time course ポイント まずOとTを聞く！ Q, R, P, Sはclosed questionで攻める。 Onset 最重要！ sudden / acute / gradual のいずれか</description>
     </item>
     
   </channel>
