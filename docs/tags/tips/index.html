@@ -30,6 +30,28 @@
 
 
 
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
@@ -186,7 +208,7 @@
               </p>
               <div class="post-entry">
                 
-                  定義 \[ LR+ := \frac{感度}{1-特異度} \] \[ LR- := \frac{1-感度}{特異度} \] 目安 \(\ge5, \le\frac{1}{5}\)で中くらい、 \(\ge10, \l
+                  定義 \[ LR+ := \frac{Sensitivity}{1-Specificity} \] \[ LR- := \frac{1-Sensitivity}{Specificity} \] 目安 \(\ge5, \le\frac{1}{5}\)で中くらい、 \(\ge10, \le\frac{1}{10}\)でとても 使える指標。 簡単近似計
                   <a href="https://drres.github.io/blogdown/post/likelyhood-ratio/" class="post-read-more">[Read More]</a>
                 
               </div>

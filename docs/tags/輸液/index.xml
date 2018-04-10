@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>輸液 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E8%BC%B8%E6%B6%B2/</link>
+    <description>Recent content in 輸液 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 10 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E8%BC%B8%E6%B6%B2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>輸液総論</title>
+      <link>https://drres.github.io/blogdown/post/%E8%BC%B8%E6%B6%B2%E7%B7%8F%E8%AB%96/</link>
+      <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/%E8%BC%B8%E6%B6%B2%E7%B7%8F%E8%AB%96/</guid>
+      <description>体液の組成 ratio 細胞内液 8 細胞間質 3 血漿量 1 gとmEqの換算 mEq/g NaCl 17.0 KCl 13.0 Na+ 43.5 K+ 25.6 Ca2+ 50.0 Mg2+ 83.3 製剤の種類 一般的な輸液 等張液 自由水 生食 1000 0 T1 590 410 T3 360 640 5%Glu 0</description>
+    </item>
+    
+  </channel>
+</rss>

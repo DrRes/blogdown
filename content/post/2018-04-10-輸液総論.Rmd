@@ -1,0 +1,90 @@
+---
+title: 輸液総論
+author: ~
+date: '2018-04-10'
+slug: 輸液総論
+categories: ["研修"]
+tags: ["輸液", "総論"]
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(pipeR)
+library(DT)
+library(data.table)
+library(DiagrammeR)
+library(knitr)
+library(rmarkdown)
+library(blogdown)
+library(formattable)
+```
+
+## 体液の組成
+
+```{r}
+tibble(
+  ` ` = c("細胞内液", "細胞間質", "血漿量"),
+  ratio = c(8, 3, 1)
+) %>% kable()
+
+```
+
+
+## gとmEqの換算
+
+```{r}
+gmEq <- tibble(
+  ` ` = c("NaCl", "KCl", "Na+", "K+", "Ca2+", "Mg2+"),
+  `mEq/g` = c(17, 13, 43.5, 25.6, 50, 83.3)
+)
+
+kable(gmEq)
+```
+
+## 製剤の種類
+
+### 一般的な輸液
+
+```{r}
+tibble(
+  ` ` = c("生食", "T1", "T3", "5%Glu"),
+  等張液 = c(1000,590,360,0),
+  自由水 = c(0,410,640,1000)
+) %>% formattable(list(等張液 = color_bar("tomato"),
+                       自由水 = color_bar("steelblue")))
+```
+
+* 等張液($Na + K = 154$) -> 細胞外液に分布(3:1)
+* 自由水($Na + K = 0$) -> 全区画に分布(8:3:1)
+
+なので、
+
+```{r}
+tibble(
+  ` ` = c("生食", "T1", "T3", "5%Glu"),
+  細胞内液 = c(0, 275, 425, 665),
+  細胞間質 = c(750, 545, 430, 250),
+  血漿量 = c(250, 180, 145, 85)
+) %>% formattable(list(細胞内液 = color_bar("tomato"),
+                       細胞間質 = color_bar("olivedrab"),
+                       血漿量 = color_bar("orange")))
+```
+
+
+
+### 膠質液
+
+血管内にとどまる。20~25%など高濃度なら間質や細胞内から水分を引っ張ってくる。
+
+日本でよく使われるのはHES70/0.5。
+
+スラッシュの前後は分子量/置換度を表す。
+分子量は小さく置換度は低い部類に属する。そのため、
+投与後すぐに分解されて分子数増加し膠質浸透圧増加。しかしその分作用は長続きしないが、凝固能や腎機能に与える影響も小さい。
+
+ただし、**膠質液は生命予後を改善する明らかなエビデンスはなく、かえって死亡リスクが高く、腎代替療法を要する(*NEJM* 2012)。**
+
+普通の輸液と組み合わせて、炎症における血管内水分量の保持という役割に徹すればよいのかも？
+
+

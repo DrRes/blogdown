@@ -30,6 +30,28 @@
 
 
 
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
@@ -190,6 +212,33 @@
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         
           <div class="panel panel-default">
+            <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse研修" data-parent="#accordion"
+               href="#" aria-expanded="false" aria-controls="collapse研修">
+                <div class="panel-heading" role="tab" id="header研修">
+                  <h4 class="panel-title">
+                      研修
+                    <span class="badge">3</span>
+                  </h4>
+                </div>
+            </a>
+            <div id="collapse研修" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading研修">
+              <div class="panel-body">
+                <a href="https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/" class="list-group-item view-all">
+                View all</a>
+                <div class="list-group">
+                  
+                    <a href="https://drres.github.io/blogdown/post/likelyhood-ratio/" class="list-group-item">尤度比</a>
+                  
+                    <a href="https://drres.github.io/blogdown/post/%E8%BC%B8%E6%B6%B2%E7%B7%8F%E8%AB%96/" class="list-group-item">輸液総論</a>
+                  
+                    <a href="https://drres.github.io/blogdown/post/opqrst-of-pain/" class="list-group-item">痛みのOPQRST</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="panel panel-default">
             <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsegithub" data-parent="#accordion"
                href="#" aria-expanded="false" aria-controls="collapsegithub">
                 <div class="panel-heading" role="tab" id="headergithub">
@@ -229,29 +278,6 @@
                 <div class="list-group">
                   
                     <a href="https://drres.github.io/blogdown/post/try/" class="list-group-item">Try</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="panel panel-default">
-            <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse研修" data-parent="#accordion"
-               href="#" aria-expanded="false" aria-controls="collapse研修">
-                <div class="panel-heading" role="tab" id="header研修">
-                  <h4 class="panel-title">
-                      研修
-                    <span class="badge">1</span>
-                  </h4>
-                </div>
-            </a>
-            <div id="collapse研修" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading研修">
-              <div class="panel-body">
-                <a href="https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/" class="list-group-item view-all">
-                View all</a>
-                <div class="list-group">
-                  
-                    <a href="https://drres.github.io/blogdown/post/opqrst-of-pain/" class="list-group-item">痛みのOPQRST</a>
                   
                 </div>
               </div>

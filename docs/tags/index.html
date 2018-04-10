@@ -30,6 +30,28 @@
 
 
 
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
@@ -190,6 +212,29 @@
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         
           <div class="panel panel-default">
+            <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsetips" data-parent="#accordion"
+               href="#" aria-expanded="false" aria-controls="collapsetips">
+                <div class="panel-heading" role="tab" id="headertips">
+                  <h4 class="panel-title">
+                      tips
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+            </a>
+            <div id="collapsetips" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingtips">
+              <div class="panel-body">
+                <a href="https://drres.github.io/blogdown/tags/tips/" class="list-group-item view-all">
+                View all</a>
+                <div class="list-group">
+                  
+                    <a href="https://drres.github.io/blogdown/post/likelyhood-ratio/" class="list-group-item">尤度比</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="panel panel-default">
             <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsetry1" data-parent="#accordion"
                href="#" aria-expanded="false" aria-controls="collapsetry1">
                 <div class="panel-heading" role="tab" id="headertry1">
@@ -275,6 +320,52 @@
                 <div class="list-group">
                   
                     <a href="https://drres.github.io/blogdown/post/opqrst-of-pain/" class="list-group-item">痛みのOPQRST</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="panel panel-default">
+            <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse総論" data-parent="#accordion"
+               href="#" aria-expanded="false" aria-controls="collapse総論">
+                <div class="panel-heading" role="tab" id="header総論">
+                  <h4 class="panel-title">
+                      総論
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+            </a>
+            <div id="collapse総論" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading総論">
+              <div class="panel-body">
+                <a href="https://drres.github.io/blogdown/tags/%E7%B7%8F%E8%AB%96/" class="list-group-item view-all">
+                View all</a>
+                <div class="list-group">
+                  
+                    <a href="https://drres.github.io/blogdown/post/%E8%BC%B8%E6%B6%B2%E7%B7%8F%E8%AB%96/" class="list-group-item">輸液総論</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="panel panel-default">
+            <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapse輸液" data-parent="#accordion"
+               href="#" aria-expanded="false" aria-controls="collapse輸液">
+                <div class="panel-heading" role="tab" id="header輸液">
+                  <h4 class="panel-title">
+                      輸液
+                    <span class="badge">1</span>
+                  </h4>
+                </div>
+            </a>
+            <div id="collapse輸液" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading輸液">
+              <div class="panel-body">
+                <a href="https://drres.github.io/blogdown/tags/%E8%BC%B8%E6%B6%B2/" class="list-group-item view-all">
+                View all</a>
+                <div class="list-group">
+                  
+                    <a href="https://drres.github.io/blogdown/post/%E8%BC%B8%E6%B6%B2%E7%B7%8F%E8%AB%96/" class="list-group-item">輸液総論</a>
                   
                 </div>
               </div>

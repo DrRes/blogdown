@@ -14,5 +14,29 @@ Or you can delete these file if you don't need it.
 </style>
 -->
 <!-- or you could include some additional css libraries:
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.css" integrity="sha256-I1UoFd33KHIydu88R9owFaQWzwkiZV4hXXug5aYaM28=" crossorigin="anonymous" />
+<link rel="stylesheet" href="/home/shin/R-3.4.4/library/rmdformats/templates/html_clean/clean.css" />
+
+<script src="/home/shin/R-3.4.4/library/rmdformats/templates/html_clean/clean.js"></script>
 -->
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration -->

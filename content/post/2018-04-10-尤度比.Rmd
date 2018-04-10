@@ -1,14 +1,4 @@
 ---
-output:
-  rmdformats::html_clean:
-    code_folding: hide
-    self_contained: true
-    thumbnails: false
-    lightbox: false
-    md_extensions: -ascii_identifiers
----
-
----
 title: 尤度比
 author: DrRes
 date: '2018-04-10'
@@ -33,10 +23,10 @@ library(blogdown)
 ## 定義
 
 $$
-LR+ := \frac{感度}{1-特異度}
+LR+ := \frac{Sensitivity}{1-Specificity}
 $$
 $$
-LR- := \frac{1-感度}{特異度}
+LR- := \frac{1-Sensitivity}{Specificity}
 $$
 
 

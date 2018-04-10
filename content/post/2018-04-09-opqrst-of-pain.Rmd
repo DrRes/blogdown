@@ -23,7 +23,7 @@ library(rmarkdown)
 
 
 ```{r}
-OPQRST <- tibble(Symbol = c("O", "P", "Q", "R", "S", "T"),
+OPQRST <- tibble(` ` = c("O", "P", "Q", "R", "S", "T"),
                  Discription = c("Onset", "Palliative/provocative", "Quality", "Region", "assosiated Symptoms", "Time course"))
 
 kable(OPQRST)

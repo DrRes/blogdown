@@ -17,7 +17,7 @@
       <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://drres.github.io/blogdown/post/likelyhood-ratio/</guid>
-      <description>定義 \[ LR+ := \frac{感度}{1-特異度} \] \[ LR- := \frac{1-感度}{特異度} \] 目安 \(\ge5, \le\frac{1}{5}\)で中くらい、 \(\ge10, \l</description>
+      <description>定義 \[ LR+ := \frac{Sensitivity}{1-Specificity} \] \[ LR- := \frac{1-Sensitivity}{Specificity} \] 目安 \(\ge5, \le\frac{1}{5}\)で中くらい、 \(\ge10, \le\frac{1}{10}\)でとても 使える指標。 簡単近似計</description>
     </item>
     
   </channel>
