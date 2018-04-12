@@ -1,0 +1,87 @@
+---
+title: 栄養状態の評価
+author: ~
+date: '2018-04-12'
+slug: 栄養状態の評価
+categories: ["研修"]
+tags: ["総論"]
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(pipeR)
+library(DT)
+library(data.table)
+library(DiagrammeR)
+library(knitr)
+library(rmarkdown)
+library(blogdown)
+library(formattable)
+```
+
+# 指標
+
+* subjective grobal assessment (SGA)
+* objective data assessment (ODA)
+* geriatric nutritional risk index (GNRI)
+* mini nutrition assessment (MNA)
+
+## SGA
+
+「主観的」なだけあって、問診して身体計測してなんとなく評価。要は普段やってること。
+
+同じ人が測定して変化を見るのが推奨される。
+
+## ODA
+
+検査値が入ってくる。
+
+* **Alb**: 半減期21日なので栄養失調から**タイムラグあり**。肝障害でも低値。
+* **コリンエステラーゼ**: 蛋白代謝能。肝障害に注意。
+* **T.Chol**: 脂肪合成能。肝障害に注意。
+* **トランスフェリン**: rapid turnover protein. 半減期7~10日。
+* **pre-Alb**: rapid turnover protein. 半減期3~4日。
+* **レチノール結合蛋白(LBP)**: rapid turnover protein.半減期12~16h。
+
+※ただしrapid turnover proteinはコストがかかる。
+
+* **窒素バランス**: := アミノ酸投与量(g/day) $\times 0.16 - $尿中UN(g/day) $\times 1.25$
+
+※0.16はアミノ酸の窒素含有率、1.25は個人間の変動係数。
+
+* **リンパ球数**:栄養障害の指標になりうる。
+    - $\le2,000$: 軽度
+    - $\le1,200$: 中等度
+    - $<800$: 高度
+
+## GNRI
+
+Definition: 
+$$
+GNRI :=  14.89 \times 血清Alb(g/dL) + 41.7 \times min(\frac{RealWeight}{IdealWeight}, 1)
+$$
+
+※寝たきり患者では身長の代わりに膝高を用いて理想体重を求める。
+
+原法での栄養障害リスク：
+    - $\le98$: 軽度
+    - $\le91$: 中等度
+    - $\le81$: 重度
+
+透析患者用の栄養障害リスク（日本での基準）：
+    - $\le91$: リスク(+)
+    
+## MNA
+
+スクリーニングとしてShort Formが用いられる。
+6項目のみ、$\ge65$歳対象。
+
+項目は、
+* 食事量
+* 体重
+* 自力歩行
+* 精神的ストレス・急性疾患
+* 認知症・うつ
+* BMI or 大腿周囲長(CC)
