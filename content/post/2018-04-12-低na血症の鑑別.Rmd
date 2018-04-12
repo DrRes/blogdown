@@ -1,0 +1,51 @@
+---
+title: 高・低Na血症の鑑別
+author: ~
+date: '2018-04-12'
+slug: 高・低Na血症の鑑別
+categories: ["研修"]
+tags: ["鑑別", "L/D"]
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(pipeR)
+library(DT)
+library(data.table)
+library(DiagrammeR)
+library(knitr)
+library(rmarkdown)
+library(blogdown)
+library(formattable)
+```
+
+## 低Na血症
+
+偽物を見分ける。
+
+```{r}
+tibble(
+  ` ` = c("高張性", "等張性", "低張性"), 
+  `本物?` = c("血症浸透圧↑（高血糖など）による偽陽性", "高脂血症・高蛋白血症による偽陽性", "本物") 
+) %>% kable()
+```
+
+低張性の鑑別は？
+
+```{r}
+tibble(
+  ` ` = c("Na, K欠乏", "Intake過剰", "尿細管での尿生成障害", "ADH過剰"),
+  例 = c("嘔吐・下痢", "多飲・低張輸液過剰", "有効循環血漿量↓,腎障害 ", "入院中のストレス, SIADH")
+) %>% kable()
+```
+
+## 高Na血症
+
+```{r}
+tibble(
+  ` ` =c("飲水不十分", "ヘンレでのNa再吸収阻害","ADH作用低下"),
+  例 = c("意識障害", "浸透圧利尿", "ADH分泌障害")) %>% kable()
+```
+

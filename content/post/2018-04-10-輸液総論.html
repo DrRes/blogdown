@@ -11,25 +11,40 @@ tags: ["輸液", "総論"]
 
 <div class="section level2">
 <h2>体液の組成</h2>
-<table>
+<table class="table table-condensed">
 <thead>
-<tr class="header">
-<th></th>
-<th align="right">ratio</th>
+<tr>
+<th style="text-align:right;">
+</th>
+<th style="text-align:right;">
+ratio
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>細胞内液</td>
-<td align="right">8</td>
+<tr>
+<td style="text-align:right;">
+細胞内液
+</td>
+<td style="text-align:right;">
+<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: tomato; width: 100.00%">8</span>
+</td>
 </tr>
-<tr class="even">
-<td>細胞間質</td>
-<td align="right">3</td>
+<tr>
+<td style="text-align:right;">
+細胞間質
+</td>
+<td style="text-align:right;">
+<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: tomato; width: 37.50%">3</span>
+</td>
 </tr>
-<tr class="odd">
-<td>血漿量</td>
-<td align="right">1</td>
+<tr>
+<td style="text-align:right;">
+血漿量
+</td>
+<td style="text-align:right;">
+<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: tomato; width: 12.50%">1</span>
+</td>
 </tr>
 </tbody>
 </table>
@@ -73,6 +88,14 @@ tags: ["輸液", "総論"]
 </div>
 <div class="section level2">
 <h2>製剤の種類</h2>
+<div class="section level3">
+<h3>膠質液</h3>
+<p>血管内にとどまる。20~25%など高濃度なら間質や細胞内から水分を引っ張ってくる。</p>
+<p>日本でよく使われるのはHES70/0.5。</p>
+<p>スラッシュの前後は分子量/置換度を表す。 分子量は小さく置換度は低い部類に属する。そのため、 投与後すぐに分解されて分子数増加し膠質浸透圧増加。しかしその分作用は長続きしないが、凝固能や腎機能に与える影響も小さい。</p>
+<p>ただし、<strong>膠質液は生命予後を改善する明らかなエビデンスはなく、かえって死亡リスクが高く、腎代替療法を要する(<em>NEJM</em> 2012)。</strong></p>
+<p>普通の輸液と組み合わせて、炎症における血管内水分量の保持という役割に徹すればよいのかも？</p>
+</div>
 <div class="section level3">
 <h3>一般的な輸液</h3>
 <table class="table table-condensed">
@@ -215,13 +238,151 @@ T3
 </tr>
 </tbody>
 </table>
+<div class="section level4">
+<h4>是正輸液</h4>
+<p>経口摂取が不可能な患者に用いる。</p>
+<ul>
+<li>血管内水不足 -&gt; 等張液</li>
+<li>低Na血症で内液多、外液乏 -&gt; 等張液</li>
+<li>低Na血症で内液多、外液乏（高度or症候性） -&gt; 高張液（3%NaClaqなど）</li>
+</ul>
+<div class="section level5">
+<h5>脱水の鑑別</h5>
+<p>古典的には高張性、等張性、低張性と分類されるが、実臨床では使いにくいので以下の2つに分ける。</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="left">主病態</th>
+<th align="left">患者背景</th>
+<th align="left">喪失する体液</th>
+<th align="left">輸液例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dehydration</td>
+<td align="left">血管浸透圧↑、高Na血症 飲</td>
+<td align="left">水不能 低</td>
+<td align="left">張 5%</td>
+<td align="left">Glu</td>
+</tr>
+<tr class="even">
+<td>Volume depletion</td>
+<td align="left">循環障害</td>
+<td align="left">体液喪失一般</td>
+<td align="left">等張〜高張</td>
+<td align="left">生食</td>
+</tr>
+</tbody>
+</table>
+<p>cf. 尿崩症では飲水するからDehydrationにはならない(血清Naは正常上限)。</p>
+<p>体液量減少の指標は、</p>
+<ul>
+<li><strong>体重減少</strong></li>
+<li><strong>バイタル </strong>(頻脈, sBP↓, 尿量↓)</li>
+<li><strong>起立性低血圧</strong></li>
+<li>sBP低下<span class="math inline">\(\ge20mmHg\)</span>より脈拍増加<span class="math inline">\(\ge30bpm\)</span>や立ちくらみの方が鋭敏</li>
+<li><strong>中心静脈圧(CVP)</strong></li>
+<li>Early Goal Directed Therapyにおいて、septic shockでは<span class="math inline">\(8~12mmHg\)</span>を目標に等張液輸液することを目標にしていたが、その後のstudyでは否定されている。治療開始12h後の水分水筒料が<span class="math inline">\(+3L\)</span>のときに最も生存率が高いとされた(VASST study)。</li>
+<li><strong>エコーでの下大静脈(IVC)径</strong></li>
+<li>バイタルより早期に異常が出ると言われる。</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">IVC径(mm)</th>
+<th align="left">呼吸性変動</th>
+<th align="left">CVP(mmHg)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">&lt;15</td>
+<td align="left">&gt;50%</td>
+<td align="left">0~5</td>
+</tr>
+<tr class="even">
+<td align="left">15~25</td>
+<td align="left">&gt;50%</td>
+<td align="left">5~10</td>
+</tr>
+<tr class="odd">
+<td align="left">15~25</td>
+<td align="left">&lt;50%</td>
+<td align="left">10~15</td>
+</tr>
+<tr class="even">
+<td align="left">&gt;25</td>
+<td align="left">ほぼなし</td>
+<td align="left">15~20</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>診察所見</strong></li>
+<li>有用なものに乏しい</li>
+<li>もっともLRが高いのはCapillary Refill Time (CRT)延長(LR<span class="math inline">\(+6.9\)</span>)。しかし小児においては有用だが成人では微妙。</li>
+<li><strong>血液・尿の濃縮初見</strong></li>
+<li>Ht, Alb, UAの相対的上昇</li>
+<li>BUN/Cre &gt; 20</li>
+<li>尿浸透圧 &gt; 500mOsm/L</li>
+<li>尿比重 &gt; 1.020</li>
+<li>尿Cl &lt; 20mEq/L）
+<ul>
+<li>高度の代謝性アシドーシス、副腎不全、利尿薬使用で↑</li>
+</ul></li>
+<li>FENa &lt; 0.1%
+<ul>
+<li>1%だと一般成人でもよくいる。GFR↓・利尿薬使用で↑となるので、その際は<span class="math inline">\(FE_UN\)</span>を用いる。</li>
+</ul></li>
+<li><span class="math inline">\(FE_UN\)</span> &lt; 35%</li>
+</ul>
+<p>※浮腫は輸液の判断には有用ではない。炎症がひどくて血管内から間質に水が逃げて血管内脱水になるのはよくある。</p>
 </div>
-<div class="section level3">
-<h3>膠質液</h3>
-<p>血管内にとどまる。20~25%など高濃度なら間質や細胞内から水分を引っ張ってくる。</p>
-<p>日本でよく使われるのはHES70/0.5。</p>
-<p>スラッシュの前後は分子量/置換度を表す。 分子量は小さく置換度は低い部類に属する。そのため、 投与後すぐに分解されて分子数増加し膠質浸透圧増加。しかしその分作用は長続きしないが、凝固能や腎機能に与える影響も小さい。</p>
-<p>ただし、<strong>膠質液は生命予後を改善する明らかなエビデンスはなく、かえって死亡リスクが高く、腎代替療法を要する(<em>NEJM</em> 2012)。</strong></p>
-<p>普通の輸液と組み合わせて、炎症における血管内水分量の保持という役割に徹すればよいのかも？</p>
+<div class="section level5">
+<h5>腎保護戦略</h5>
+<p>「尿量を保つ」＝「循環血漿量を保つ」</p>
+<ul>
+<li>適切な輸液量</li>
+<li>昇圧剤（とくにノルアドレナリン）</li>
+<li>敗血症のhyperdynamic stateで拡張した輸出細動脈を締めて、糸球体内圧を上げる</li>
+</ul>
+<p>※利尿薬は尿細管以降に働きかけるので、うっ血の解除には有効だが「尿量を保つ」目的には不適。。</p>
+</div>
+</div>
+<div class="section level4">
+<h4>維持輸液</h4>
+<ul>
+<li>健常人の生理的体液喪失 -&gt; 3号液</li>
+</ul>
+<p>だが、入院患者では * ストレス -&gt; ADH分泌 -&gt; 低Na血症リスク - 急性期や周術期では3合液でなく生理食塩水などの等張液が適切 * 下痢やドレナージによる喪失 - 喪失体液の電解質組成に似た輸液を維持輸液にプラス</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="left">組成</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>胃液以外の消化液</td>
+<td align="left">等張</td>
+</tr>
+<tr class="even">
+<td>胃液</td>
+<td align="left">半等張</td>
+</tr>
+<tr class="odd">
+<td>フロセミド利尿</td>
+<td align="left">半等張</td>
+</tr>
+<tr class="even">
+<td>発汗</td>
+<td align="left">高度の低張</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>

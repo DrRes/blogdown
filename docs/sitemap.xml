@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://drres.github.io/blogdown/post/%E9%AB%98%E4%BD%8Ena%E8%A1%80%E7%97%87%E3%81%AE%E9%91%91%E5%88%A5/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/post/likelyhood-ratio/</loc>
     <lastmod>2018-04-10T00:00:00+00:00</lastmod>
   </url>
@@ -29,7 +34,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/</loc>
-    <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -48,18 +53,25 @@
   </url>
   
   <url>
+    <loc>https://drres.github.io/blogdown/tags/l/d/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://drres.github.io/blogdown/post/</loc>
-    <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://drres.github.io/blogdown/tags/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -101,7 +113,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/</loc>
-    <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -114,6 +126,12 @@
   <url>
     <loc>https://drres.github.io/blogdown/tags/%E8%BC%B8%E6%B6%B2/</loc>
     <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drres.github.io/blogdown/tags/%E9%91%91%E5%88%A5/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
