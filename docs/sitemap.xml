@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://drres.github.io/blogdown/post/%E6%A0%84%E9%A4%8A%E7%99%82%E6%B3%95/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/post/%E6%A0%84%E9%A4%8A%E7%8A%B6%E6%85%8B%E3%81%AE%E8%A9%95%E4%BE%A1/</loc>
     <lastmod>2018-04-12T00:00:00+00:00</lastmod>
   </url>
@@ -95,6 +100,12 @@
   <url>
     <loc>https://drres.github.io/blogdown/tags/%E6%95%91%E6%80%A5%E5%A4%96%E6%9D%A5/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drres.github.io/blogdown/tags/%E7%97%85%E6%A3%9F%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

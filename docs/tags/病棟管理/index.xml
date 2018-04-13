@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>病棟管理 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E7%97%85%E6%A3%9F%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 病棟管理 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 13 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E7%97%85%E6%A3%9F%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>栄養療法</title>
+      <link>https://drres.github.io/blogdown/post/%E6%A0%84%E9%A4%8A%E7%99%82%E6%B3%95/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/%E6%A0%84%E9%A4%8A%E7%99%82%E6%B3%95/</guid>
+      <description>Quick Review 既存のキット製剤ってよく考えられててすごいね。 1度で完璧は不可能。何度か軌道修正していくのが大事。 栄養評価をして適応を判断 栄養状態の評価</description>
+    </item>
+    
+  </channel>
+</rss>
