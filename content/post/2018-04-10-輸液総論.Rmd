@@ -18,28 +18,34 @@ library(knitr)
 library(rmarkdown)
 library(blogdown)
 library(formattable)
+indentS <- function(indent = 1){str_c("<ul>\n",rep("<li>",indent))}
+indentE <- function(indent = 1){str_c(rep("</li>",indent),"\n</ul>")}
 ```
+
 
 ## 体液の組成
 
+`r indentS(1)`
 ```{r}
 tibble(
   ` ` = c("細胞内液", "細胞間質", "血漿量"),
   ratio = c(8, 3, 1)
 ) %>% formattable(list(ratio = color_bar("tomato")))
 ```
-
+`r indentE(1)`
 
 ## gとmEqの換算
 
+`r indentS(1)`
 ```{r}
 gmEq <- tibble(
   ` ` = c("NaCl", "KCl", "Na+", "K+", "Ca2+", "Mg2+"),
   `mEq/g` = c(17, 13, 43.5, 25.6, 50, 83.3)
 )
 
-kable(gmEq)
+formattable(gmEq)
 ```
+`r indentE(1)`
 
 ## 製剤の種類
 
@@ -99,7 +105,6 @@ tibble(
 
 古典的には高張性、等張性、低張性と分類されるが、実臨床では使いにくいので以下の2つに分ける。
 
-* 
 ```{r}
 tibble(
   ` ` = c("Dehydration", "Volume depletion"),
@@ -127,7 +132,7 @@ tibble(
   `IVC径(mm)` = c("<15", "15~25", "15~25", ">25"),
   呼吸性変動 = c(">50%", ">50%", "<50%", "ほぼなし"),
   `CVP(mmHg)` = c("0~5", "5~10", "10~15", "15~20")
-) %>% kable()
+) %>% formattable()
 ```
 
 * **診察所見**

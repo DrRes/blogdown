@@ -80,17 +80,17 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.main]]
     identifier = "QuickJump"
-    name = "Samples"
+    name = "QuickJump"
     weight = 2
 
 [[menu.main]]
-    parent = "Samples"
+    parent = "QuickJump"
     name = "Write a new entry"
     url = "post/how-to-upload-new-entry/"
     weight = 1
 
 [[menu.main]]
-    parent = "Samples"
+    parent = "QuickJump"
     name = "痛みのOPQRST"
     url = "post/opqrst-of-pain/"
     weight = 3
