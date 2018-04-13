@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://drres.github.io/blogdown/post/shirokane/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://drres.github.io/blogdown/post/install-r-rstudio-on-ubuntu/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/post/%E6%A0%84%E9%A4%8A%E7%99%82%E6%B3%95/</loc>
     <lastmod>2018-04-13T00:00:00+00:00</lastmod>
   </url>
@@ -80,6 +90,12 @@
   </url>
   
   <url>
+    <loc>https://drres.github.io/blogdown/categories/r/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/tags/</loc>
     <lastmod>2018-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -88,6 +104,12 @@
   <url>
     <loc>https://drres.github.io/blogdown/tags/tips/</loc>
     <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drres.github.io/blogdown/categories/ubuntu/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

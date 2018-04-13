@@ -21,6 +21,24 @@
     </item>
     
     <item>
+      <title>How to Use RStudio on SHIROKANE</title>
+      <link>https://drres.github.io/blogdown/post/shirokane/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/shirokane/</guid>
+      <description>from Windows 起動方法 XLaunch起動 TeraTerm 起動 新しい接続： ホスト：slogin.hgc.jp 次へ ユーザ名：sn&amp;hellip;. パスフレーズ：&amp;hel</description>
+    </item>
+    
+    <item>
+      <title>Install R &amp; RStudio on Ubuntu16.04</title>
+      <link>https://drres.github.io/blogdown/post/install-r-rstudio-on-ubuntu/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/install-r-rstudio-on-ubuntu/</guid>
+      <description>基本 このサイトに従うが、ハマったところがあるので書いておく。 以下、上のサイトからコマンドを引用。 # Install all dependencies sudo apt-get install build-essential sudo apt-get install fort77 sudo apt-get install xorg-dev sudo apt-get install liblzma-dev libblas-dev gfortran</description>
+    </item>
+    
+    <item>
       <title>栄養療法</title>
       <link>https://drres.github.io/blogdown/post/%E6%A0%84%E9%A4%8A%E7%99%82%E6%B3%95/</link>
       <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>

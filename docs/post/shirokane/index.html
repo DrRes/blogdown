@@ -5,23 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>DMの問診</title>
-  <meta property="og:title" content="DMの問診" />
-  <meta name="twitter:title" content="DMの問診" />
-  <meta name="description" content="入院時サマリー作成にgood">
-  <meta property="og:description" content="入院時サマリー作成にgood">
-  <meta name="twitter:description" content="入院時サマリー作成にgood">
+  <title>How to Use RStudio on SHIROKANE</title>
+  <meta property="og:title" content="How to Use RStudio on SHIROKANE" />
+  <meta name="twitter:title" content="How to Use RStudio on SHIROKANE" />
+  <meta name="description" content="from Windows 起動方法 XLaunch起動 TeraTerm 起動 新しい接続： ホスト：slogin.hgc.jp 次へ ユーザ名：sn&hellip;. パスフレーズ：&hel">
+  <meta property="og:description" content="from Windows 起動方法 XLaunch起動 TeraTerm 起動 新しい接続： ホスト：slogin.hgc.jp 次へ ユーザ名：sn&hellip;. パスフレーズ：&hel">
+  <meta name="twitter:description" content="from Windows 起動方法 XLaunch起動 TeraTerm 起動 新しい接続： ホスト：slogin.hgc.jp 次へ ユーザ名：sn&hellip;. パスフレーズ：&hel">
   <meta name="author" content="DrRes"/>
   <link href='https://drres.github.io/blogdown/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://drres.github.io/blogdown/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://drres.github.io/blogdown/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://drres.github.io/blogdown/post/dm%E3%81%AE%E5%95%8F%E8%A8%BA/" />
+  <meta property="og:url" content="https://drres.github.io/blogdown/post/shirokane/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="A Notebook" />
 
   <meta name="generator" content="Hugo 0.38.1" />
-  <link rel="canonical" href="https://drres.github.io/blogdown/post/dm%E3%81%AE%E5%95%8F%E8%A8%BA/" />
+  <link rel="canonical" href="https://drres.github.io/blogdown/post/shirokane/" />
   <link rel="alternate" href="https://drres.github.io/blogdown/index.xml" type="application/rss+xml" title="A Notebook">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -201,11 +201,7 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>DMの問診</h1>
-                
-                  
-                    <h2 class="post-subheading">入院時サマリー作成にgood</h2>
-                  
+              <h1>How to Use RStudio on SHIROKANE</h1>
                 
                 
                   <span class="post-meta">
@@ -234,136 +230,53 @@
       <article role="main" class="blog-post">
         
 
-<h2 id="症状">症状</h2>
+<h2 id="from-windows">from Windows</h2>
+
+<h3 id="起動方法">起動方法</h3>
 
 <ul>
-<li>代謝異常
+<li>XLaunch起動</li>
+<li>TeraTerm 起動</li>
+<li>新しい接続：
+　ホスト：slogin.hgc.jp</li>
+
+<li><p>次へ</p>
 
 <ul>
-<li>口渇</li>
-<li>多飲多尿</li>
-<li>体重減少</li>
-<li>易疲労感</li>
+<li>ユーザ名：sn&hellip;.</li>
+<li>パスフレーズ：&hellip;&hellip;&hellip;</li>
+<li>RSA/&hellip;鍵を使う　秘密鍵：Document/supcom_key_secret</li>
 </ul></li>
-<li>合併症
+
+<li><p><code>qlogin -l s_vmem=32G,mem_req=32G</code></p>
 
 <ul>
-<li>下肢血流障害(ASO, PAD)
+<li>32の部分は一致していればほかの数字でよい</li>
+</ul></li>
 
-<ul>
-<li>足のしびれ</li>
-<li>ED</li>
-<li>歩行時下肢痛</li>
-<li>足潰瘍・壊疽</li>
-</ul></li>
-<li>上肢
-
-<ul>
-<li>手根幹症候群</li>
-<li>dupuytren拘縮</li>
-</ul></li>
-<li>自律神経
-
-<ul>
-<li>便秘・下痢</li>
-<li>起立性低血圧</li>
-<li>発汗異常・ほてり</li>
-<li>無月経</li>
-</ul></li>
-<li>目
-
-<ul>
-<li>視力低下</li>
-<li>最終眼科受診</li>
-</ul></li>
-<li>腎
-
-<ul>
-<li>透析の有無
-<br /></li>
-</ul></li>
-</ul></li>
+<li><p><code>rstudio</code></p></li>
 </ul>
 
-<h2 id="現病歴-受診の動機">現病歴・受診の動機</h2>
+<h3 id="初回設定">初回設定</h3>
 
 <ul>
-<li>過去の検査記録</li>
-<li>DMが疑われたきっかけ</li>
+<li><p>TeraTerm　設定＞SSH転送＞リモートの(x)アプリケーションをlocalのXサーバに表示する　にチェックし、設定の保存を実行。再起動しておく</p></li>
+
+<li><p><code>qlogin</code>後、　<code>vi ~/.bash_profile</code>　として、以下を追記。</p>
+
+<ul>
+<li>export PATH=/usr/local/package/rstudio/1.1.322/bin:${PATH}</li>
+<li>export RSTUDIO_WHICH_R=/usr/local/package/r/3.4.1/bin/R</li>
+</ul></li>
+
+<li><p>一応、c:/Program Files(x86)/Xming/X0.hostsに
+172.27.18.122
+を追記してあるが、多分いらない</p></li>
 </ul>
 
-<h2 id="既往">既往</h2>
+<h2 id="from-ubuntu">from Ubuntu</h2>
 
-<ul>
-<li>体重歴
-
-<ul>
-<li>20歳時体重</li>
-<li>Max体重(何歳?)</li>
-<li>経過、特に急激な体重減少</li>
-<li>体重減少時の随伴症状</li>
-</ul></li>
-<li>妊娠・出産歴
-
-<ul>
-<li>何歳だったか</li>
-<li>妊娠時の高血糖・尿糖の指摘有無</li>
-<li>児の出生体重</li>
-<li>繰り返す自然流産・奇形児出産の有無</li>
-</ul></li>
-<li>関連疾患
-
-<ul>
-<li>DMをきたす疾患
-
-<ul>
-<li>膵疾患</li>
-<li>内分泌疾患</li>
-<li>肝疾患</li>
-<li>胃切除後</li>
-</ul></li>
-<li>生活習慣病
-
-<ul>
-<li>肥満</li>
-<li>高血圧</li>
-<li>脂質異常症</li>
-<li>脳血管障害</li>
-<li>虚血性心疾患</li>
-</ul></li>
-</ul></li>
-</ul>
-
-<h2 id="家族歴">家族歴</h2>
-
-<ul>
-<li>可能な限り細かく聞く。家系図を書くのも良い。</li>
-<li>肥満についても聞く。</li>
-<li>ミトコンドリアDMを疑った場合、難聴を伴うことが多い</li>
-</ul>
-
-<h2 id="治療歴">治療歴</h2>
-
-<h2 id="dmに関する知識">DMに関する知識</h2>
-
-<ul>
-<li>DM教育歴</li>
-<li>食事・運動療法への理解</li>
-</ul>
-
-<h2 id="生活歴">生活歴</h2>
-
-<ul>
-<li>身体活動度</li>
-<li>嗜好品・酒・タバコ</li>
-<li>社会的背景
-
-<ul>
-<li>家族構成</li>
-<li>生活状態(単身赴任など)
-<br /></li>
-</ul></li>
-</ul>
+<h3 id="起動方法-1">起動方法</h3>
 
         
       </article>
@@ -372,9 +285,13 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://drres.github.io/blogdown/post/shirokane/" data-toggle="tooltip" data-placement="top" title="How to Use RStudio on SHIROKANE">&larr; Previous Post</a>
+              <a href="https://drres.github.io/blogdown/post/install-r-rstudio-on-ubuntu/" data-toggle="tooltip" data-placement="top" title="Install R &amp; RStudio on Ubuntu16.04">&larr; Previous Post</a>
             </li>
           
+          
+            <li class="next">
+              <a href="https://drres.github.io/blogdown/post/dm%E3%81%AE%E5%95%8F%E8%A8%BA/" data-toggle="tooltip" data-placement="top" title="DMの問診">Next Post &rarr;</a>
+            </li>
           
         </ul>
       

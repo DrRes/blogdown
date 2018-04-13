@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on A Notebook</title>
+    <link>https://drres.github.io/blogdown/categories/ubuntu/</link>
+    <description>Recent content in Ubuntu on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 13 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install R &amp; RStudio on Ubuntu16.04</title>
+      <link>https://drres.github.io/blogdown/post/install-r-rstudio-on-ubuntu/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/install-r-rstudio-on-ubuntu/</guid>
+      <description>基本 このサイトに従うが、ハマったところがあるので書いておく。 以下、上のサイトからコマンドを引用。 # Install all dependencies sudo apt-get install build-essential sudo apt-get install fort77 sudo apt-get install xorg-dev sudo apt-get install liblzma-dev libblas-dev gfortran</description>
+    </item>
+    
+  </channel>
+</rss>
