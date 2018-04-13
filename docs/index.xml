@@ -58,15 +58,6 @@ on RStudio&amp;rsquo;s Console  new_post(&amp;quot;title&amp;quot;) write new po
     </item>
     
     <item>
-      <title>Try</title>
-      <link>https://drres.github.io/blogdown/post/try/</link>
-      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://drres.github.io/blogdown/post/try/</guid>
-      <description>markdown Yeah!</description>
-    </item>
-    
-    <item>
       <title>痛みのOPQRST</title>
       <link>https://drres.github.io/blogdown/post/opqrst-of-pain/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
@@ -76,14 +67,12 @@ on RStudio&amp;rsquo;s Console  new_post(&amp;quot;title&amp;quot;) write new po
     </item>
     
     <item>
-      <title>About me</title>
+      <title>About</title>
       <link>https://drres.github.io/blogdown/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://drres.github.io/blogdown/page/about/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
- I rock a great mustache I&amp;rsquo;m extremely loyal to my family  What else do you need?
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+      <description>そこらへんにいる研修医1年目です。ワタシRチョットできる。 記憶力があまりにも足りないから、すぐに参照できるevernote的なの作ろうと軽い</description>
     </item>
     
   </channel>

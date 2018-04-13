@@ -4,7 +4,7 @@ author: ~
 date: '2018-04-12'
 slug: 高・低Na血症の鑑別
 categories: ["研修"]
-tags: ["鑑別", "L/D"]
+tags: ["鑑別"]
 ---
 
 

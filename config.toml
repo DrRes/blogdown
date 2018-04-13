@@ -79,7 +79,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 3
 
 [[menu.main]]
-    identifier = "Samples"
+    identifier = "QuickJump"
     name = "Samples"
     weight = 2
 
@@ -98,4 +98,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "Tags"
     url = "tags/"
+    weight = 3
+    
+[[menu.main]]
+    name = "Categories"
+    url = "categories/"
     weight = 3
