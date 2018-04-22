@@ -125,7 +125,7 @@
         
           
             <li>
-              <a title="Home" href="/blogdown/">Home</a>
+              <a title="Home" href="../../blogdown/">Home</a>
             </li>
           
         
@@ -134,9 +134,9 @@
               <a class="navlinks-parent" href="javascript:void(0)">QuickJump</a>
               <div class="navlinks-children">
                 
-                  <a href="/blogdown/post/how-to-upload-new-entry/">Write a new entry</a>
+                  <a href="../../blogdown/post/how-to-upload-new-entry/">Write a new entry</a>
                 
-                  <a href="/blogdown/post/opqrst-of-pain/">痛みのOPQRST</a>
+                  <a href="../../blogdown/post/opqrst-of-pain/">痛みのOPQRST</a>
                 
               </div>
             </li>
@@ -144,19 +144,19 @@
         
           
             <li>
-              <a title="About" href="/blogdown/page/about/">About</a>
+              <a title="About" href="../../blogdown/page/about/">About</a>
             </li>
           
         
           
             <li>
-              <a title="Categories" href="/blogdown/categories/">Categories</a>
+              <a title="Categories" href="../../blogdown/categories/">Categories</a>
             </li>
           
         
           
             <li>
-              <a title="Tags" href="/blogdown/tags/">Tags</a>
+              <a title="Tags" href="../../blogdown/tags/">Tags</a>
             </li>
           
         
@@ -243,7 +243,10 @@
 <ul>
 <li>basal 1(~2)回/日 + bolus 2回/日</li>
 </ul></li>
-<li><h2 id="bot">BOT:</h2></li>
+<li>BOT: basal supported oral therapy
+<ul>
+<li>インスリンはbasalのみ</li>
+</ul></li>
 <li>速効型or超速効型食前頻回投与
 <ul>
 <li>bolusのみという理解でOK</li>
@@ -256,38 +259,56 @@
 <p>basalは持効型溶解インスリン、bolusは速効型or超速効型を用いる。</p>
 <div class="section level3">
 <h3>速効型と超速効型の違い</h3>
-<pre><code>## # A tibble: 2 x 3
-##   ` `      投与timing 持続時間                 
-##   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;                    
-## 1 速効型   食事30分前 用量依存的にtail延長     
-## 2 超速効型 食直前     効果は↑だが時間は一定(5h)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="left">投与timing</th>
+<th align="left">持続時間</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>速効型</td>
+<td align="left">食事30分前</td>
+<td align="left">用量依存的にtail延長</td>
+</tr>
+<tr class="even">
+<td>超速効型</td>
+<td align="left">食直前</td>
+<td align="left">効果は↑だが時間は一定(5h)</td>
+</tr>
+</tbody>
+</table>
 <p>超速効型の食直前とは、食事が目の前に用意されてから。無理に食前にせずとも、食事中、食後すぐでもOK。</p>
 </div>
 <div class="section level3">
 <h3>混合型インスリンの分類</h3>
 <ul>
-<li>Low-Mix(超速効型3:中間型7)製剤2回/日投与</li>
-</ul>
-<p>旧来の主流。混合比率の調整不能。また、投与間隔に生活リズムの方を合わせないといけない。</p>
+<li>Low-Mix(超速効型3:中間型7)製剤2回/日投与
 <ul>
-<li>Mid-Mix(超速効型5:中間型5)製剤3回/日投与</li>
-</ul>
-<p>外来で多用。低血糖が比較的少ない。リスプロ(ヒューマログ）ミックス50など。</p>
+<li>旧来の主流。混合比率の調整不能。また、投与間隔に生活リズムの方を合わせないといけない。</li>
+</ul></li>
+<li>Mid-Mix(超速効型5:中間型5)製剤3回/日投与
 <ul>
-<li>High-Mix(超速効型7:中間型3)製剤</li>
-</ul>
-<p>ビミョーって本に書いてあった。</p>
+<li>外来で多用。低血糖が比較的少ない。リスプロ(ヒューマログ）ミックス50など。</li>
+</ul></li>
+<li>High-Mix(超速効型7:中間型3)製剤
 <ul>
-<li>ライゾデグ</li>
+<li>ビミョーって本に書いてあった。</li>
+</ul></li>
+<li>ライゾデグ
+<ul>
+<li>デグルデグ（トレシーバ、持効型溶解） + ノボラピッド（超速効型）の混合（モル比7:3）。これから増えていきそう。</li>
+</ul></li>
 </ul>
-<p>デグルデグ（トレシーバ、持効型溶解） + ノボラピッド（超速効型） （モル比7:3）。これから増えていきそう。</p>
 </div>
 <div class="section level3">
 <h3>インスリンスライディングスケール</h3>
 <ul>
-<li><p>本来インスリンは高血糖になる<strong>前</strong>に打つもの。高血糖時に打つのでは後手に回ってしまう。</p></li>
-<li><p>あくまでい一時しのぎ。なるべく早く（1〜2日で）固定打ちに切り替える。</p></li>
-<li><p>使うときは、食事量不安定時、インスリン導入時の必要量予測困難例など</p></li>
+<li>本来インスリンは高血糖になる<strong>前</strong>に打つもの。高血糖時に打つのでは後手に回ってしまう。</li>
+<li>あくまでい一時しのぎ。なるべく早く（1〜2日で）固定打ちに切り替える。</li>
+<li>使うときは、食事量不安定時、インスリン導入時の必要量予測困難例など</li>
 </ul>
 <p><code>e.g.</code> 毎食直前（食直後投与）</p>
 <table>
@@ -525,8 +546,11 @@
 <li><strong>血糖の変動が平坦化</strong>(理想：100-100-100-140)するようにbasal, bolusを調節。
 <ul>
 <li>basalをできる限り増やしておけばbolusは最低量で済む。</li>
-<li><strong>血糖は以前の血糖の影響が累積して決まる</strong>ことに注意。朝の血糖を下げると、つられて昼以降の血糖ベースラインが下がることを考慮して昼、夕も調節する。 <img src="2018-04-19-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%B3%E6%B2%BB%E7%99%82_files/figure-html/unnamed-chunk-8-1.png" width="672" /></li>
+<li><strong>血糖は以前の血糖の影響が累積して決まる</strong>ことに注意。朝の血糖を下げると、つられて昼以降の血糖ベースラインが下がることを考慮して昼、夕も調節する。</li>
 </ul></li>
+</ol>
+<p><img src="2018-04-19-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%B3%E6%B2%BB%E7%99%82_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<ol start="4" style="list-style-type: decimal">
 <li>糖毒性解除
 <ul>
 <li>入院10日あたりに多い。</li>
@@ -644,7 +668,7 @@
 </ul>
 <p>昼は仕事等で注射不能な患者もいるので、昼bolusをグリニドに置き換えるだけでも喜ばれることも。</p>
 </div>
-<div id="bot-1" class="section level4">
+<div id="bot" class="section level4">
 <h4>BOT</h4>
 <p>手順は以下：</p>
 <ol style="list-style-type: decimal">
@@ -832,14 +856,15 @@
 <div id="t1dm" class="section level4">
 <h4>T1DM</h4>
 <ul>
-<li>グルカゴン相対的高値、高ケトン血症起こしやすい</li>
-</ul>
-<p><span class="math inline">\(\Longrightarrow\)</span><strong>十分な糖質栄養<span class="math inline">\(+\)</span>十分なインスリン</strong></p>
-<p>決して糖質制限はしない。</p>
+<li>グルカゴン相対的高値、高ケトン血症起こしやすい
 <ul>
-<li>自己免疫による抗外来性インスリン抗体（後述）出現リスク。</li>
+<li><strong>十分な糖質栄養<span class="math inline">\(+\)</span>十分なインスリン</strong>。決して糖質制限はしない！</li>
+</ul></li>
+<li>自己免疫による抗外来性インスリン抗体（後述）出現リスク。
+<ul>
+<li>素早く自己免疫疾患を合併検索！</li>
+</ul></li>
 </ul>
-<p><span class="math inline">\(\Longrightarrow\)</span>素早く自己免疫疾患を合併検索！</p>
 </div>
 <div class="section level4">
 <h4>肝硬変</h4>
@@ -879,9 +904,11 @@
 </table>
 <ul>
 <li>脾機能↑<span class="math inline">\(\Rightarrow\)</span>HbA1c↓</li>
-<li>Alb半減期↑<span class="math inline">\(\Rightarrow\)</span>GA↑</li>
+<li>Alb半減期↑<span class="math inline">\(\Rightarrow\)</span>GA↑
+<ul>
+<li>早期にSMBG導入し血糖自体での評価<strong>要</strong></li>
+</ul></li>
 </ul>
-<p><span class="math inline">\(\Longrightarrow\)</span>早期にSMBG導入し血糖自体での評価<strong>要</strong></p>
 </div>
 <div class="section level5">
 <h5>治療</h5>
@@ -919,9 +946,11 @@
 <h4>ステロイドパルス</h4>
 <ul>
 <li>血糖は400-500まで上がることも。</li>
-<li>短期間（3日間程度）のみ</li>
+<li>短期間（3日間程度）のみ
+<ul>
+<li>速効型or超速効型インスリンによるスライディングスケールで対応。</li>
+</ul></li>
 </ul>
-<p><span class="math inline">\(\Longrightarrow\)</span>速効型or超速効型インスリンによるスライディングスケールで対応。</p>
 </div>
 </div>
 <div class="section level3">
@@ -950,10 +979,7 @@
 <div class="section level4">
 <h4>抗外来性インスリン抗体</h4>
 <ul>
-<li>非特異的インスリン結合率(NSB)$&gt;$30-40%で外来性インスリン作用は不安定に。</li>
-</ul>
-<p><span class="math inline">\(\Longrightarrow\)</span>インスリン製剤をヒト型<span class="math inline">\(\leftrightarrow\)</span>アナログ型で切り替えるが、有効率<strong>低</strong></p>
-<ul>
+<li>非特異的インスリン結合率(NSB)$&gt;<span class="math inline">\(30-40%で外来性インスリン作用は不安定に。 - インスリン製剤をヒト型\)</span>$アナログ型で切り替えるが、有効率<strong>低</strong></li>
 <li>自己免疫疾患をコントロールして抗体出現を予防するのが大事。特にT1DMでは素早く合併検索を！</li>
 </ul>
 </div>

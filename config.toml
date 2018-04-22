@@ -18,6 +18,7 @@ publishDir = "docs"
 hasCJKLanguage = true
 languageCode = "ja-jp"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+relativeurls = true
 
 [Params]
   subtitle = "A Notebook about R, Resident, and Ubuntu."
