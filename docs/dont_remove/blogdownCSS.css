@@ -1,7 +1,7 @@
 # css候補
 
 /*左線＋塗り*/
-h1 {
+h2 {
 font-size: 3em;
 padding: 0.5em;/*文字周りの余白*/
 color: #8b0000;/*文字色*/
@@ -10,13 +10,13 @@ border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
 }
 
 /*グラデ下線*/
-h2{
+h3{
 font-size: 2em;
 position: relative;
 padding: 0.25em 0;
 color: #8b0000;/*文字色*/
 }
-h2:after {
+h3:after {
 content: "";
 display: block;
 height: 4px;
@@ -26,13 +26,30 @@ background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
 }
 
 /*色つけ、サイズ変更*/
-h3{
+h4{
 color: #8b0000;/*文字色*/
 font-size: 1.5em;
 }
 
 /*色つけ、サイズ変更*/
-h4{
+h5{
 color: #8b0000;/*文字色*/
 font-size: 1em;
+}
+
+.intro-header .page-heading .page-subheading,
+.intro-header .post-heading .post-subheading {
+  font-size: 27px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+.intro-header .post-heading .post-subheading {
+  margin-bottom: 20px;
+}
+.intro-header.big-img .page-heading .page-subheading,
+.intro-header.big-img .post-heading .post-subheading {
+  font-weight: 400;
 }
