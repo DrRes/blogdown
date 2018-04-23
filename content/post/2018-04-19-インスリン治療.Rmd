@@ -192,37 +192,7 @@ tibble(
     - basalをできる限り増やしておけばbolusは最低量で済む。
     - **血糖は以前の血糖の影響が累積して決まる**ことに注意。朝の血糖を下げると、つられて昼以降の血糖ベースラインが下がることを考慮して昼、夕も調節する。
     
-```{r}
-timing <- c("朝食前", "昼食前", "夕食前", "眠前")
-tibble(
-      time = factor(rep(timing, 2), levels = timing),
-      BS = c(100, 100, 100, 140, 100, 180, 160, 160),
-      status = c(rep("ideal", 4), rep("actual", 4))
-      ) -> tbl1
-tibble(
-      time=factor(c(rep("昼食前",2),rep("夕食前",2), rep("眠前",2)), levels = timing),
-      BS=c(180,100,160,180,160,200),
-      group=c(1,1,2,2,3,3)
-    ) -> tbl2
-tibble(
-      time=factor(c("昼食前",rep("夕食前",2),"眠前"), levels = timing),
-      BS=c(180,180,160,200),
-      group=c(1,1,2,2)
-    ) -> tbl3
-
-ggplot(
-    data=tbl1,
-    aes(x = time, y = BS, color = status, group=status)) +
-    geom_line() +
-    geom_path(data=tbl2,
-      aes(x=time, y=BS, group=group), 
-      arrow=arrow() ,lineend = "round", color = "black") +
-    geom_line(data=tbl3,
-      aes(x=time, y=BS, group=group),
-      color="blue", linetype="dashed") +
-    coord_fixed(ratio=0.01)
-
-```
+![](../../data/insulin_treatment_1.png)
 
 4. 糖毒性解除
     - 入院10日あたりに多い。
@@ -383,7 +353,7 @@ GLP-1作動薬への全切り替えが一時期流行ったが、タキフィラ
 
 ### 低血糖
 
-血糖$\le70$、低血糖症状**強**なら直ちに糖分摂取。成人では**Glu換算15-20g必要**。一般的包装3-4個分相当。低血糖の警告症状は、強い空腹感・冷感・振戦・動悸など。
+血糖$\le65〜70$or低血糖症状**強**なら直ちに糖分摂取。成人では**Glu換算10-20g必要**。一般的包装2-4個分相当。低血糖の警告症状は、強い空腹感・冷感・振戦・動悸など。
 
 **SU薬では作用遷延**し、一旦血糖↑もまた下がることがある。Gluに加えて炭水化物を経口摂取させ、最低数h経過観察〜入院させる。
 
