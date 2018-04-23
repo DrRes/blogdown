@@ -1,0 +1,38 @@
+# css候補
+
+/*左線＋塗り*/
+h1 {
+font-size: 3em;
+padding: 0.5em;/*文字周りの余白*/
+color: #8b0000;/*文字色*/
+background: #fffaf4;/*背景色*/
+border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+/*グラデ下線*/
+h2{
+font-size: 2em;
+position: relative;
+padding: 0.25em 0;
+color: #8b0000;/*文字色*/
+}
+h2:after {
+content: "";
+display: block;
+height: 4px;
+background: -moz-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+}
+
+/*色つけ、サイズ変更*/
+h3{
+color: #8b0000;/*文字色*/
+font-size: 1.5em;
+}
+
+/*色つけ、サイズ変更*/
+h4{
+color: #8b0000;/*文字色*/
+font-size: 1em;
+}
