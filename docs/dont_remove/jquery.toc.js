@@ -2,7 +2,7 @@
 
     jQuery.fn.toc = function(options) {
         var defaults = {
-            startLevel: 'h3',
+            startLevel: 'h2',
             listType: 'ul',
             target: 'toc'
         };
@@ -45,4 +45,4 @@
         $("#" + setting.target).html(data);
         return this;
     };
-})($)
+})($);
