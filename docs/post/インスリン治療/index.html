@@ -55,48 +55,11 @@
     });
     </script>
     
-
-
-<script type="text/javascript">
-$(function() {
-  var idcount = 1;
-  var toc = '';
-  var currentlevel = 0;
-  $(".entry-content :header",this).each(function(){
-      this.id = "toc_" + idcount;
-      idcount++;
-      var level = 0;
-      if(this.nodeName.toLowerCase() == "h2") {
-          level = 1;
-      } else if(this.nodeName.toLowerCase() == "h3") {
-          level = 2;
-      } else if(this.nodeName.toLowerCase() == "h4") {
-          level = 3;
-      } else if(this.nodeName.toLowerCase() == "h5") {
-          level = 4;
-      }
-      while(currentlevel < level) {
-          toc += "<ul>";
-          currentlevel++;
-      }
-      while(currentlevel > level) {
-          toc += "</ul>";
-          currentlevel--;
-      }
-      toc += '<li><a href="#' + this.id + '">' + $(this).html() + "<\/a><\/li>\n";
-  });
-  if(toc){ toc = '<div class="mokuji_wrap"><div class="mokuji">【目次】</div>' + toc + '</div>'; }
-  $("#toc").html(toc);
- 
-  
-  $('a[href^=#]').click(function(){
-      var   speed = 1000,
-              href= $(this).attr("href"),
-              target = $(href == "#" || href == "" ? 'html' : href),
-              position = target.offset().top;
-      $("html, body").animate({scrollTop:position}, speed, "swing");
-      return false;
-  });
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://drres.github.io/blogdown/dont_remove/jquery.toc.js"></script>
+<script>
+$(function(){
+    $("body").toc();
 });
 </script>
 
@@ -274,7 +237,8 @@ $(function() {
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>DM救急疾患は別記載。</p>
-<dev id="toc">
+<div id="toc">
+
 </div>
 <div class="section level2">
 <h2>インスリン治療法の分類</h2>
@@ -1094,7 +1058,7 @@ $(function() {
 </ul></li>
 <li>HOMA-IR
 <ul>
-<li><span class="math inline">\(:=insulin_{fasting}\timesBS_{fasting}\times\frac{1}{405}\)</span></li>
+<li><span class="math inline">\(:=insulin_{fasting}\times BS_{fasting}\times\frac{1}{405}\)</span></li>
 <li>抵抗性: <span class="math inline">\(\le2.5\)</span>, 健常: <span class="math inline">\(\ge1.6\)</span></li>
 </ul></li>
 <li>75gOGTTにてインスリン追加分泌遅延</li>
