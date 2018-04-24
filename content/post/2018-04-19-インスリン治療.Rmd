@@ -5,10 +5,11 @@ date: '2018-04-19'
 slug: インスリン治療
 categories: ["研修"]
 tags: ["DM"]
-subtitle: 'DM救急疾患は別記載'
 ---
 
+DM救急疾患は別記載。
 
+<dev id="toc"></div>
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -40,7 +41,9 @@ indentE <- function(indent = 1){str_c(rep("</li>",indent),"\n</ul>")}
 
 basalは持効型溶解インスリン、bolusは速効型or超速効型を用いる。
 
-### <a name="selection">使い分け</a>
+<a name="selection"></a>
+
+### 使い分け
 
 ```{r}
 tibble(
@@ -128,7 +131,9 @@ tibble(
 ) %>% kable()
 ```
 
-### <a name="intravenous">インスリン静脈内投与</a>
+<a name="intravenous"></a>
+
+### インスリン静脈内投与
 
 ```{r}
 tibble(
@@ -249,7 +254,9 @@ tibble(
     - bolus: $\times1$量からBBT開始
 2. BBT調整
 
-### <a name="stepdown">糖毒性解除後</a>
+<a name="stepdown"></a>
+
+### 糖毒性解除後
 
 糖毒性解除によりインスリン必要量↓の可能性大。
 
@@ -503,7 +510,9 @@ tibble(
 * 暁現象
 * Somogyi効果
 
-### <a name="words">用語解説</a>
+<a name="words"></a>
+
+### 用語解説
 
 #### 抗外来性インスリン抗体
 
@@ -529,7 +538,9 @@ $\Longrightarrow$早朝空腹時血糖↑のみでbasal↑とすると深夜に�
 
 ### インスリンにまつわる指標
 
-#### <a name="insulin_secretion">内因性インスリン分泌能</a>
+<a name="insulin_secretion"></a>
+
+#### 内因性インスリン分泌能
 
 * 空腹時血中CPR
     - 依存状態: $\le$0.5ng/mL, 健常: $\ge$1.0

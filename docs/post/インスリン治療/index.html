@@ -8,9 +8,9 @@
   <title>インスリン治療</title>
   <meta property="og:title" content="インスリン治療" />
   <meta name="twitter:title" content="インスリン治療" />
-  <meta name="description" content="DM救急疾患は別記載">
-  <meta property="og:description" content="DM救急疾患は別記載">
-  <meta name="twitter:description" content="DM救急疾患は別記載">
+  <meta name="description" content="DM救急疾患は別記載。 インスリン治療法の分類 BBT: basal-bolus treatment 基礎インスリン(basal) 1~2回/日 &#43; 追加インスリン(bolus) 3回/日 B2B: basal 2 bolus (basal 2">
+  <meta property="og:description" content="DM救急疾患は別記載。 インスリン治療法の分類 BBT: basal-bolus treatment 基礎インスリン(basal) 1~2回/日 &#43; 追加インスリン(bolus) 3回/日 B2B: basal 2 bolus (basal 2">
+  <meta name="twitter:description" content="DM救急疾患は別記載。 インスリン治療法の分類 BBT: basal-bolus treatment 基礎インスリン(basal) 1~2回/日 &#43; 追加インスリン(bolus) 3回/日 B2B: basal 2 bolus (basal 2">
   <meta name="author" content="DrRes"/>
   <link href='https://drres.github.io/blogdown/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://drres.github.io/blogdown/img/avatar-icon.png" />
@@ -56,6 +56,49 @@
     </script>
     
 
+
+<script type="text/javascript">
+$(function() {
+  var idcount = 1;
+  var toc = '';
+  var currentlevel = 0;
+  $(".entry-content :header",this).each(function(){
+      this.id = "toc_" + idcount;
+      idcount++;
+      var level = 0;
+      if(this.nodeName.toLowerCase() == "h2") {
+          level = 1;
+      } else if(this.nodeName.toLowerCase() == "h3") {
+          level = 2;
+      } else if(this.nodeName.toLowerCase() == "h4") {
+          level = 3;
+      } else if(this.nodeName.toLowerCase() == "h5") {
+          level = 4;
+      }
+      while(currentlevel < level) {
+          toc += "<ul>";
+          currentlevel++;
+      }
+      while(currentlevel > level) {
+          toc += "</ul>";
+          currentlevel--;
+      }
+      toc += '<li><a href="#' + this.id + '">' + $(this).html() + "<\/a><\/li>\n";
+  });
+  if(toc){ toc = '<div class="mokuji_wrap"><div class="mokuji">【目次】</div>' + toc + '</div>'; }
+  $("#toc").html(toc);
+ 
+  
+  $('a[href^=#]').click(function(){
+      var   speed = 1000,
+              href= $(this).attr("href"),
+              target = $(href == "#" || href == "" ? 'html' : href),
+              position = target.offset().top;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+  });
+});
+</script>
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
@@ -205,10 +248,6 @@
             <div class="post-heading">
               <h1>インスリン治療</h1>
                 
-                  
-                    <h2 class="post-subheading">DM救急疾患は別記載</h2>
-                  
-                
                 
                   <span class="post-meta">
   
@@ -234,7 +273,10 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <div class="section level2">
+        <p>DM救急疾患は別記載。</p>
+<dev id="toc">
+</div>
+<div class="section level2">
 <h2>インスリン治療法の分類</h2>
 <ul>
 <li>BBT: basal-bolus treatment
@@ -259,8 +301,9 @@
 </ul></li>
 </ul>
 <p>basalは持効型溶解インスリン、bolusは速効型or超速効型を用いる。</p>
+<p><a name="selection"></a></p>
 <div class="section level3">
-<h3><a name="selection">使い分け</a></h3>
+<h3>使い分け</h3>
 <table>
 <thead>
 <tr class="header">
@@ -439,9 +482,10 @@
 </tr>
 </tbody>
 </table>
+<p><a name="intravenous"></a></p>
 </div>
 <div class="section level3">
-<h3><a name="intravenous">インスリン静脈内投与</a></h3>
+<h3>インスリン静脈内投与</h3>
 <table>
 <thead>
 <tr class="header">
@@ -630,11 +674,12 @@
 </ul></li>
 <li>BBT調整</li>
 </ol>
+<p><a name="stepdown"></a></p>
 </div>
 </div>
 </div>
 <div class="section level3">
-<h3><a name="stepdown">糖毒性解除後</a></h3>
+<h3>糖毒性解除後</h3>
 <p>糖毒性解除によりインスリン必要量↓の可能性大。</p>
 <p>患者にあわせてステップダウンなど検討していく。インスリン離脱できることも。</p>
 <p>選択肢としては以下：</p>
@@ -980,10 +1025,11 @@
 <li>暁現象</li>
 <li>Somogyi効果</li>
 </ul>
+<p><a name="words"></a></p>
 </div>
 </div>
 <div class="section level3">
-<h3><a name="words">用語解説</a></h3>
+<h3>用語解説</h3>
 <div class="section level4">
 <h4>抗外来性インスリン抗体</h4>
 <ul>
@@ -1006,8 +1052,9 @@
 </div>
 <div class="section level3">
 <h3>インスリンにまつわる指標</h3>
+<p><a name="insulin_secretion"></a></p>
 <div class="section level4">
-<h4><a name="insulin_secretion">内因性インスリン分泌能</a></h4>
+<h4>内因性インスリン分泌能</h4>
 <ul>
 <li>空腹時血中CPR
 <ul>

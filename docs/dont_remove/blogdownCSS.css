@@ -45,4 +45,34 @@ font-size: 1em;
   margin: 10px 0 0;
   margin-bottom: 20px;
   font-weight: 400;
+  color: 848484;/*文字色*/
+  background: #ffffff;/*背景色*/
+  border-left: none;/*左線（実線 太さ 色）*/
+
+}
+
+/*目次*/
+
+#toc {
+  margin: 0 auto;
+  width: 90%;
+  background: #ffd;
+}
+.mokuji_wrap {
+  border-radius: 7px;
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 3px 3px 4px #bbb;
+  box-shadow: 3px 3px 4px #bbb;
+}
+.mokuji {
+  color: #800;
+  text-align: center;
+}
+#toc ul {
+  border: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+#toc li {
+  line-height: 1.2
 }
