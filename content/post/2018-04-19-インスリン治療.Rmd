@@ -9,7 +9,7 @@ tags: ["DM"]
 
 DM救急疾患は別記載。
 
-<dev id="toc"></div>
+<div id="toc"></div>
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -563,7 +563,7 @@ $\Longrightarrow$早朝空腹時血糖↑のみでbasal↑とすると深夜に�
 * 血中インスリン濃度
     - 抵抗性: $\ge15\mu$U/mLで明らか, 健常: １桁
 * HOMA-IR
-    - $:=insulin_{fasting}\timesBS_{fasting}\times\frac{1}{405}$
+    - $:=insulin_{fasting}\times BS_{fasting}\times\frac{1}{405}$
     - 抵抗性: $\le2.5$, 健常: $\ge1.6$
 * 75gOGTTにてインスリン追加分泌遅延
 
