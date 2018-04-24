@@ -15,7 +15,7 @@
 
         var header = [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ];
         var tmpArray = new Array;
-        for (i=startLevel-1; i<6; i++) {
+        for (i=startLevel-1; i<4; i++) {
             tmpArray.push( header[i] );
         }
         var headers = tmpArray.join(',');
