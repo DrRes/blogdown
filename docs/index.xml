@@ -6,10 +6,19 @@
     <description>Recent content on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 19 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://drres.github.io/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>経口血糖降下薬とGLP-1受容体作動薬</title>
+      <link>https://drres.github.io/blogdown/post/oral-dm-drugs/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/oral-dm-drugs/</guid>
+      <description>各薬剤の特性 category drug mainEffect sideEffect attention merit 体重変動 CKD時注意点 併用時basal代替 併用時bolus代替 血糖変動安定化 併用時attention 中止時atten</description>
+    </item>
     
     <item>
       <title>インスリン治療</title>
