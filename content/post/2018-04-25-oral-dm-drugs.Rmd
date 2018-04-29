@@ -52,15 +52,15 @@ tibble(
        "",
        "",
        "",
-       "総死亡率減少で有意差が出た唯一の経口血糖降下薬(EMPA-REG trial)"),
+       "総死亡率減少で有意差が出た唯一の経口血糖降下薬(EMPA_REG trial)"),
   体重変動=c("↓",
          "(↑)",
          "","","→",
          rep("↓",3)),
-  CKD時注意点=c(rep("G4以降禁忌",3),"使用可", "使用可", "薬剤次第","使用可","eGFR<30~45では無効"),
-  併用時basal代替=c(T,T,T,F,T,T,F,T),
-  併用時bolus代替=c(F,rep(T,7)),
-  血糖変動安定化=c(rep(F, 3),rep(T,4),F),
+  CKD時attention=c(rep("G4以降禁忌",3),"使用可", "使用可", "薬剤次第","使用可","eGFR<30~45では無効"),
+  basal代替=c(T,T,T,F,T,T,F,T),
+  bolus代替=c(F,rep(T,7)),
+  血糖変動stablization=c(rep(F, 3),rep(T,4),F),
   併用時attention=c("積極的に併用検討", 
            "有効。浮腫を起こしやすい報告あり、少量開始",
            "単剤使用以上に低血糖リスク。あくまで底上げ用・少量のみ",
@@ -74,19 +74,32 @@ tibble(
            rep("",5))
 ) -> oralDMdrugs
 
-formattable(oralDMdrugs,
+formattable(oralDMdrugs %>% select(category:sideEffect),
             list(category=formatter("span",
                                     style= x ~ style(color= c(rep("tomato", 2), rep("steelblue",2), rep("olivedrab",2), rep("orange",2)),
-                                      x ~ sprintf("%s"))),
-                    併用時basal代替=formatter("span",
+                                      x ~ sprintf("%s")))))
+formattable(oralDMdrugs %>% select(drug,attention:体重変動))
+```
+
+#### インスリン併用時
+
+```{r}
+formattable(oralDMdrugs %>% select(drug,basal代替:併用時attention),
+            list(basal代替=formatter("span",
                                       style= x ~ style(color = ifelse(x,"green", "red")),
                                       x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No"))),
-                    併用時bolus代替=formatter("span",
+                    bolus代替=formatter("span",
                                       style= x ~ style(color = ifelse(x,"green", "red")),
                                       x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No"))),
-                    血糖変動安定化=formatter("span",
+                    血糖変動stablization=formatter("span",
                                       style= x ~ style(color = ifelse(x,"green", "red")),
                                       x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No")))))
+```
+
+#### その他の注意点
+
+```{r}
+formattable(oralDMdrugs %>% select(drug,CKD時attention,中止時attention))
 ```
 
 ### GLP-1受容体作動薬について
