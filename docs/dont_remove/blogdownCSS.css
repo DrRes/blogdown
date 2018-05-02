@@ -35,6 +35,8 @@ font-size: 1.5em;
 h5{
 color: #8b0000;/*文字色*/
 font-size: 1em;
+line-height: 1.5em;
+vertical-align: bottom;
 }
 
 .post-subheading {
