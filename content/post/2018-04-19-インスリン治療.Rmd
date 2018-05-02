@@ -7,7 +7,9 @@ categories: ["研修"]
 tags: ["DM"]
 ---
 
-DM救急疾患は別記載。
+DM救急疾患は[別記載](../dka-hhs/)。
+
+経口血糖降下薬とGLP-1受容体作動薬については[こちら](../oral-dm-drugs/)。
 
 <div id="toc"></div>
 
