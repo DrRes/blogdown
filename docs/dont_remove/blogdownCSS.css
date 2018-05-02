@@ -39,6 +39,12 @@ line-height: 1.5em;
 vertical-align: bottom;
 }
 
+h6{
+font-size: 1em;
+line-height: 1.5em;
+vertical-align: bottom;
+}
+
 .post-subheading {
   font-size: 27px;
   line-height: 1.1;
