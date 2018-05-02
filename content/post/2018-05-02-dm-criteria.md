@@ -11,24 +11,24 @@ tags: ["DM"]
 
 ### DM診断基準・血糖コントロール目標
 
-[DM治療ガイド2016-2017](www.jds.or.jp/modules/education/index.php?content_id=11)を参照。
+基本的には[DM治療ガイド2016-2017](http://www.jds.or.jp/modules/education/index.php?content_id=11)を参照。
 
 #### DM診断基準
 
-![](http://www.fa.kyorin.co.jp/uploads/image/jds_guide_2016-2017_04.jpg)
+![](http://www.fa.kyorin.co.jp/jds/uploads/image/jds_guide_2016-2017_04.jpg)
 
 #### 血糖コントロール目標
 
-![](http://www.fa.kyorin.co.jp/uploads/image/jds_guide_2016-2017_06.jpg)
+![](http://www.fa.kyorin.co.jp/jds/uploads/image/jds_guide_2016-2017_06.jpg)
  
 
-![](http://www.fa.kyorin.co.jp/uploads/image/jds_guide_2016-2017_07.jpg)
+![](http://www.fa.kyorin.co.jp/jds/uploads/image/jds_guide_2016-2017_07.jpg)
 
 #### 特定検診・特定保健指導
 
-![](http://www.fa.kyorin.co.jp/uploads/image/jds_guide_2016-2017_10.jpg)
+![](http://www.fa.kyorin.co.jp/jds/uploads/image/jds_guide_2016-2017_10.jpg)
 
-![](http://www.fa.kyorin.co.jp/uploads/image/jds_guide_2016-2017_11.jpg)
+![](http://www.fa.kyorin.co.jp/jds/uploads/image/jds_guide_2016-2017_11.jpg)
 
 ### DM腎症
 
@@ -42,10 +42,15 @@ tags: ["DM"]
 
 ![](https://www.asahikasei-pharma.co.jp/health/kidney/ckd/images/img_diagnosis_01.gif)
 
+(旭化成ファーマサイトより)
+
 #### DM腎症
 
 ![](https://jinentai.com/system/column_images/image_files/000/000/093/original/f2ca66aba0e00b6230360437fdce0553b23b3d45.png?1468978104)
 
+(腎援隊サイトより)
+
+
 ### 治療の基本ステップ
 
-![](http://www.fa.kyorin.co.jp/uploads/image/jds_guide_2016-2017_05.jpg)
+![](http://www.fa.kyorin.co.jp/jds/uploads/image/jds_guide_2016-2017_05.jpg)

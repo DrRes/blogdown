@@ -458,15 +458,12 @@
 
 <p>循環動態改善後は補正Na濃度に応じて輸液量決定。</p>
 
-<p>$$補正Na濃度 := Na + (BS - 100) \times \begin{eqnarray}
-\left{
-\begin{array}{l}
-0.016 &amp; (BS<400) \\
-0.024 & (BS>400) <br />
-\end{array}
-\right}
-\end{eqnarray}
-$$</p>
+<p>$補正Na濃度 := $</p>
+
+<ul>
+<li>BS&lt;400のとき: $Na + (BS - 100) \times 0.016$</li>
+<li>BS&gt;400のとき: $Na + (BS - 100) \times 0.024$</li>
+</ul>
 
 <p>|補正Na|輸液量|
 |-:|-:|
