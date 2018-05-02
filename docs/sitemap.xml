@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://drres.github.io/blogdown/post/dka-hhs/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/post/oral-dm-drugs/</loc>
     <lastmod>2018-04-25T00:00:00+00:00</lastmod>
   </url>
@@ -69,7 +74,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -83,7 +88,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/tags/dm/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -100,7 +105,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/post/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,7 +117,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/tags/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -141,6 +146,12 @@
   </url>
   
   <url>
+    <loc>https://drres.github.io/blogdown/tags/%E6%95%91%E6%80%A5/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/tags/%E6%95%91%E6%80%A5%E5%A4%96%E6%9D%A5/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -160,7 +171,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,19 @@
     <description>Recent content in Dm on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 25 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://drres.github.io/blogdown/tags/dm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DKAとHHS</title>
+      <link>https://drres.github.io/blogdown/post/dka-hhs/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/dka-hhs/</guid>
+      <description>共通点 十分な生食輸液 インスリン 電解質補正 原疾患の治療 が重要。 DKAとHHSでは、疑った時点で生食開始。 DMケトーシス・DKA 本態はインスリン</description>
+    </item>
     
     <item>
       <title>経口血糖降下薬とGLP-1受容体作動薬</title>

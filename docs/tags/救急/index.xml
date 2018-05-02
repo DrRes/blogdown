@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>救急 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E6%95%91%E6%80%A5/</link>
+    <description>Recent content in 救急 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E6%95%91%E6%80%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DKAとHHS</title>
+      <link>https://drres.github.io/blogdown/post/dka-hhs/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/dka-hhs/</guid>
+      <description>共通点 十分な生食輸液 インスリン 電解質補正 原疾患の治療 が重要。 DKAとHHSでは、疑った時点で生食開始。 DMケトーシス・DKA 本態はインスリン</description>
+    </item>
+    
+  </channel>
+</rss>

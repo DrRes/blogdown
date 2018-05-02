@@ -20,7 +20,7 @@ library(blogdown)
 library(formattable)
 ```
 
-### 各薬剤の特性
+## 各薬剤の特性
 
 ```{r}
 tibble(
@@ -60,7 +60,7 @@ tibble(
   CKD時attention=c(rep("G4以降禁忌",3),"使用可", "使用可", "薬剤次第","使用可","eGFR<30~45では無効"),
   basal代替=c(T,T,T,F,T,T,F,T),
   bolus代替=c(F,rep(T,7)),
-  血糖変動stablization=c(rep(F, 3),rep(T,4),F),
+  血糖変動stabilization=c(rep(F, 3),rep(T,4),F),
   併用時attention=c("積極的に併用検討", 
            "有効。浮腫を起こしやすい報告あり、少量開始",
            "単剤使用以上に低血糖リスク。あくまで底上げ用・少量のみ",
@@ -81,7 +81,7 @@ formattable(oralDMdrugs %>% select(category:sideEffect),
 formattable(oralDMdrugs %>% select(drug,attention:体重変動))
 ```
 
-#### インスリン併用時
+### インスリン併用時
 
 ```{r}
 formattable(oralDMdrugs %>% select(drug,basal代替:併用時attention),
@@ -91,18 +91,18 @@ formattable(oralDMdrugs %>% select(drug,basal代替:併用時attention),
                     bolus代替=formatter("span",
                                       style= x ~ style(color = ifelse(x,"green", "red")),
                                       x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No"))),
-                    血糖変動stablization=formatter("span",
+                    血糖変動stabilization=formatter("span",
                                       style= x ~ style(color = ifelse(x,"green", "red")),
                                       x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No")))))
 ```
 
-#### その他の注意点
+### その他の注意点
 
 ```{r}
 formattable(oralDMdrugs %>% select(drug,CKD時attention,中止時attention))
 ```
 
-### GLP-1受容体作動薬について
+## GLP-1受容体作動薬について
 
 * short-actingとlong-actingがある。
 * 食欲↓作用あり。ただし数カ月以上の使用では作用減弱(**GLP-1タキフィラキシー**)。コントロール不良になる例も。
