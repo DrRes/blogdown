@@ -6,10 +6,19 @@
     <description>Recent content in 研修 on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>当直</title>
+      <link>https://drres.github.io/blogdown/post/touchoku/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/touchoku/</guid>
+      <description>発熱 workflow emergencyの除外 細菌性髄膜炎なら、血培⇒抗菌薬⇒頭部CT⇒腰椎穿刺 top-to-bottom approachで診察 鑑別（非感染性を見逃さない） 感染症で</description>
+    </item>
     
     <item>
       <title>DKAとHHS</title>
