@@ -3,7 +3,7 @@ title: How to Use RStudio on SHIROKANE
 author: ~
 date: '2018-04-13'
 slug: shirokane
-categories: ["R"]
+categories: ["SHIROKANE"]
 tags: []
 subtitle: ''
 ---

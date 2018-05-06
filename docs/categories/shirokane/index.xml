@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shirokane on A Notebook</title>
+    <link>https://drres.github.io/blogdown/categories/shirokane/</link>
+    <description>Recent content in Shirokane on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 05 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/categories/shirokane/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SHIROKANEとのデータ送受信</title>
+      <link>https://drres.github.io/blogdown/post/upload-download-shirokane/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/upload-download-shirokane/</guid>
+      <description>基本はwikiに書いてあるとおりにすればOK. 自宅パソコンの場合を例示 ~/.aspera/connect/bin/ascp -i ~/.ssh/supcom_key_secret &amp;lt;元path&amp;gt; &amp;lt;先path&amp;gt; パスには&amp;l</description>
+    </item>
+    
+    <item>
+      <title>How to Use RStudio on SHIROKANE</title>
+      <link>https://drres.github.io/blogdown/post/shirokane/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/shirokane/</guid>
+      <description>from Windows 起動方法 XLaunch起動 TeraTerm 起動 新しい接続： ホスト：slogin.hgc.jp 次へ ユーザ名：sn&amp;hellip;. パスフレーズ：&amp;hel</description>
+    </item>
+    
+  </channel>
+</rss>
