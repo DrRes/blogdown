@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>ACS</title>
+  <meta property="og:title" content="ACS" />
+  <meta name="twitter:title" content="ACS" />
+  <meta name="description" content="診断 明確な基準なし.事前確率を考慮した上で, 症状 ECG変化 トロポニンT上昇 のうち$\leq$2/3でACS,$\leq$1/3でACSs/o">
+  <meta property="og:description" content="診断 明確な基準なし.事前確率を考慮した上で, 症状 ECG変化 トロポニンT上昇 のうち$\leq$2/3でACS,$\leq$1/3でACSs/o">
+  <meta name="twitter:description" content="診断 明確な基準なし.事前確率を考慮した上で, 症状 ECG変化 トロポニンT上昇 のうち$\leq$2/3でACS,$\leq$1/3でACSs/o">
+  <meta name="author" content="DrRes"/>
+  <link href='https://drres.github.io/blogdown/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://drres.github.io/blogdown/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://drres.github.io/blogdown/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://drres.github.io/blogdown/post/acs/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Notebook" />
+
+  <meta name="generator" content="Hugo 0.41" />
+  <link rel="canonical" href="https://drres.github.io/blogdown/post/acs/" />
+  <link rel="alternate" href="https://drres.github.io/blogdown/index.xml" type="application/rss+xml" title="A Notebook">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://drres.github.io/blogdown/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://drres.github.io/blogdown/css/highlight.min.css" /><link rel="stylesheet" href="https://drres.github.io/blogdown/css/codeblock.css" />
+
+
+<link rel="stylesheet" href="https://drres.github.io/blogdown/dont_remove/blogdownCSS.css" />
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://drres.github.io/blogdown/">A Notebook</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/blogdown/">Home</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">QuickJump</a>
+              <div class="navlinks-children">
+                
+                  <a href="/blogdown/post/how-to-upload-new-entry/">Write a new entry</a>
+                
+                  <a href="/blogdown/post/opqrst-of-pain/">痛みのOPQRST</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/blogdown/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Categories" href="/blogdown/categories/">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/blogdown/tags/">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="A Notebook" href="https://drres.github.io/blogdown/">
+            <img class="avatar-img" src="https://drres.github.io/blogdown/img/avatar-icon.png" alt="A Notebook" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>ACS</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on May 10, 2018
+  
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<div id="toc"></div>
+
+<h2 id="診断">診断</h2>
+
+<p>明確な基準なし.事前確率を考慮した上で,</p>
+
+<ul>
+<li>症状</li>
+<li>ECG変化</li>
+<li>トロポニンT上昇</li>
+</ul>
+
+<p>のうち$\leq$2/3でACS,$\leq$1/3でACSs/o.</p>
+
+<h2 id="分類">分類</h2>
+
+<p>ざっくりいうとこんな感じ.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">所見</th>
+<th align="left">診断</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ST↑</td>
+<td align="left">STEMI</td>
+</tr>
+
+<tr>
+<td align="left">Trop.T↑</td>
+<td align="left">NSTEMI</td>
+</tr>
+
+<tr>
+<td align="left">明確な所見なし</td>
+<td align="left">Unstable Angina</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="workflow">Workflow</h2>
+
+<p><strong>大動脈解離の除外を常に意識すること!!!</strong></p>
+
+<h3 id="患者が来る前に">患者が来る前に</h3>
+
+<ul>
+<li>カルテチェック</li>
+<li>検査オーダー</li>
+<li>点滴オーダー</li>
+</ul>
+
+<h3 id="患者到着後">患者到着後</h3>
+
+<ol>
+<li>ABCDE approach</li>
+<li>「サルも聴診器」
+
+<ul>
+<li>酸素</li>
+<li>ルート採血</li>
+<li>モニター</li>
+<li>超音波</li>
+<li>心電図</li>
+<li>胸部X-p</li>
+</ul></li>
+<li>問診
+
+<ul>
+<li>胸痛のOPQRST</li>
+<li>AMPLE</li>
+</ul></li>
+<li>ECG解釈</li>
+</ol>
+
+<h3 id="acs-acss-oの診断">ACS, ACSs/oの診断</h3>
+
+<ul>
+<li>ACSなら<a href="#first_care">初期対応</a>を行い入院.</li>
+<li>ACSs/oなら入院, 経過観察.<strong>帰してはダメ!!</strong></li>
+<li><strong>迷ったら入院!!!</strong></li>
+</ul>
+
+<p><a href=first_care></a></p>
+
+<h3 id="初期対応">初期対応</h3>
+
+<h4 id="acs">ACS</h4>
+
+<h5 id="mona">MONA</h5>
+
+<ul>
+<li>M:モルヒネ
+
+<ul>
+<li>硝酸薬で胸痛改善しない場合に検討.</li>
+<li>確認すべき除外事項:
+
+<ul>
+<li>sBP $&lt;$ 90mmHg</li>
+<li>PAH</li>
+<li>AS, HOCMを疑う収縮期雑音</li>
+<li>右室梗塞</li>
+</ul></li>
+<li>血圧低下時は下肢挙上で対応</li>
+</ul></li>
+<li>O:酸素
+
+<ul>
+<li>$SpO_2\leq$94% or 呼吸困難感(+)で使用</li>
+<li>最低6hr続ける</li>
+</ul></li>
+<li>N:ニトログリセリン舌下投与
+
+<ul>
+<li>5分おきに3回まで使用可.</li>
+<li>確認すべき除外事項:
+
+<ul>
+<li>sBP $&lt;$ 90mmHg</li>
+<li>PAH</li>
+<li>AS, HOCMを疑う収縮期雑音</li>
+<li>右室梗塞</li>
+<li>PDE5阻害薬内服中</li>
+</ul></li>
+<li>血圧低下時は下肢挙上で対応</li>
+</ul></li>
+<li>A:抗血小板薬
+
+<ul>
+<li>バイアスピリン200mg咀嚼内服</li>
+<li>確認すべき除外事項:
+
+<ul>
+<li>急性大動脈解離</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h5 id="その他検討">その他検討</h5>
+
+<ul>
+<li>ヘパリン</li>
+<li>スタチン</li>
+<li>$\beta$-blocker</li>
+<li>血管拡張薬</li>
+</ul>
+
+<h5 id="専門医コール">専門医コール</h5>
+
+<ul>
+<li>STEMI:  <strong>直ちに</strong>循環器内科医コール
+
+<ul>
+<li>緊急カテ→PCIが多い</li>
+<li>病院到着~再灌流までの目標:$\leq$90min</li>
+</ul></li>
+<li>NSTEMI: 循環器内科医コール.
+
+<ul>
+<li>背部誘導のST上昇ないか確認</li>
+<li>高リスク群なら $\leq$12-24hrに心カテ</li>
+<li>それ以外は薬物治療してから心カテ</li>
+<li>リスク評価で聞いておくべき:
+
+<ul>
+<li>6ヶ月以内のPCI</li>
+<li>冠動脈大動脈バイパス術既往</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h4 id="acss-o">ACSs/o</h4>
+
+<ul>
+<li>はじめは15-30ごとに症状・ECGチェックし時間経過みる</li>
+<li>発症後3, 6, 12hr後に症状・ECG・血液検査フォロー.
+
+<ul>
+<li>$\geq$2/3該当でACS.</li>
+<li>12hr後問題なければ待機的に虚血性心疾患の精査.</li>
+<li>迷ったらコール</li>
+</ul></li>
+</ul>
+
+<h2 id="症状-所見">症状・所見</h2>
+
+<h3 id="胸痛">胸痛</h3>
+
+<p>明確な定義はないが3つに分けると良い.</p>
+
+<ul>
+<li>典型的胸痛
+
+<ul>
+<li>締め付けられるような</li>
+<li>圧迫されるような</li>
+</ul></li>
+<li>非典型的胸痛</li>
+<li>非特異的胸痛
+
+<ul>
+<li>刺すような</li>
+<li>胸膜性</li>
+<li>体位で変化</li>
+<li>触診で再現</li>
+</ul></li>
+</ul>
+
+<h3 id="ecg変化">ECG変化</h3>
+
+<h4 id="st-elevation">ST elevation</h4>
+
+<p>ざっくり単純化すると,</p>
+
+<ul>
+<li>2つの連続する誘導でST↑$\leq$1mm</li>
+<li>V2-V3ではST↑$\leq$2mm</li>
+</ul>
+
+<p>でST上昇.</p>
+
+<h4 id="追加誘導">追加誘導</h4>
+
+<p>以下のものがあれば追加で誘導をとる.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">所見</th>
+<th align="left">追加誘導</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">下壁誘導のST上昇</td>
+<td align="left">$V<em>{3R}$, $V</em>{4R}$</td>
+</tr>
+
+<tr>
+<td align="left">ST上昇(-)</td>
+<td align="left">$V_7$, $V_8$, $V_9$</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="trop-t">Trop.T</h3>
+
+<ul>
+<li>発症4-6hrで↑</li>
+<li>Unstable Anginaでは上昇せず</li>
+<li><strong>低値でも除外×</strong></li>
+<li>腎機能障害例では偽陽性あり.
+
+<ul>
+<li>ただし必ずACSとして初期対応!</li>
+<li>CK-MBも参考に</li>
+</ul></li>
+<li>1hr rule
+
+<ul>
+<li>正常値($\geq 0.003)と高値($\leq 0.014$)の間なら前回採血の1hr後に再検</li>
+<li>変動なしならCKDでの偽陽性と判断できる</li>
+</ul></li>
+</ul>
+
+<h3 id="心エコー">心エコー</h3>
+
+<ul>
+<li>壁運動異常の確認
+
+<ul>
+<li>Visual EFの評価</li>
+</ul></li>
+<li>他疾患の除外
+
+<ul>
+<li>大動脈解離</li>
+<li>PE</li>
+<li>AS</li>
+<li>HOCM</li>
+</ul></li>
+<li>合併症の検索
+
+<ul>
+<li>心破裂</li>
+<li>心室中隔穿孔</li>
+<li>乳頭筋断裂</li>
+</ul></li>
+</ul>
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://drres.github.io/blogdown/post/ubuntu-in-mac/" data-toggle="tooltip" data-placement="top" title="MACでUbuntu">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://drres.github.io/blogdown/post/ahf/" data-toggle="tooltip" data-placement="top" title="急性心不全">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              DrRes
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://drres.github.io/blogdown/">A Notebook</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.41</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://drres.github.io/blogdown/js/main.js"></script>
+<script src="https://drres.github.io/blogdown/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://drres.github.io/blogdown/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+<script src="https://drres.github.io/blogdown/dont_remove/jquery.toc.js"></script>
+<script>
+$(function(){
+    $("body").toc();
+});
+</script>
+
+
+  </body>
+</html>
+

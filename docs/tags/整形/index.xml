@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>整形 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E6%95%B4%E5%BD%A2/</link>
+    <description>Recent content in 整形 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 17 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E6%95%B4%E5%BD%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>整形救急</title>
+      <link>https://drres.github.io/blogdown/post/seikeikyukyu/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/seikeikyukyu/</guid>
+      <description>外傷 問診 受傷機転 外力の方向 受傷時の肢位 e.g. Fall On OutStretched Hand: 橈骨遠位端骨折/上腕骨顆上骨折 外力のエネルギー 高エネルギー: 衝突・車の横転・高所からの転落な</description>
+    </item>
+    
+  </channel>
+</rss>

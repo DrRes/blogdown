@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活習慣病 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E7%94%9F%E6%B4%BB%E7%BF%92%E6%85%A3%E7%97%85/</link>
+    <description>Recent content in 生活習慣病 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E7%94%9F%E6%B4%BB%E7%BF%92%E6%85%A3%E7%97%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>脂質異常症</title>
+      <link>https://drres.github.io/blogdown/post/dyslipidemia/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/dyslipidemia/</guid>
+      <description>リスク評価をして, リスク群ごとの治療目標値に従って治療を決定するのがセオリー. リスク評価 冠動脈疾患の既往: 2次予防 以下の慢性疾患いずれか: 高</description>
+    </item>
+    
+  </channel>
+</rss>

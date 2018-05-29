@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>循環器 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E5%BE%AA%E7%92%B0%E5%99%A8/</link>
+    <description>Recent content in 循環器 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 17 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E5%BE%AA%E7%92%B0%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>不整脈</title>
+      <link>https://drres.github.io/blogdown/post/huseimyaku/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/huseimyaku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>急性心不全</title>
+      <link>https://drres.github.io/blogdown/post/ahf/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/ahf/</guid>
+      <description>診断基準(Framingham基準) 以下の症状が 大症状2つ以上 大症状1つ+小症状2つ以上 で診断(大症状は大文字) 自覚症状 夜間発作性呼吸困難o</description>
+    </item>
+    
+    <item>
+      <title>ACS</title>
+      <link>https://drres.github.io/blogdown/post/acs/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/acs/</guid>
+      <description>診断 明確な基準なし.事前確率を考慮した上で, 症状 ECG変化 トロポニンT上昇 のうち$\leq$2/3でACS,$\leq$1/3でACSs/o</description>
+    </item>
+    
+  </channel>
+</rss>

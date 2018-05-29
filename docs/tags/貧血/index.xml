@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>貧血 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E8%B2%A7%E8%A1%80/</link>
+    <description>Recent content in 貧血 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 09 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E8%B2%A7%E8%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>鉄動態</title>
+      <link>https://drres.github.io/blogdown/post/fe-kinetics/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/fe-kinetics/</guid>
+      <description>鉄欠乏 診断基準 TSAT$\leq$20% TSAT: トランスフェリン飽和度 $:= \frac{Fe_{serum}(\mu g/dL)}{TIBC(\mu g/dL)}\times$100 血清フェリチン $\leq$100ng/mL の2つを主に用いて評価。MCVは感度特異度とも不十分</description>
+    </item>
+    
+  </channel>
+</rss>

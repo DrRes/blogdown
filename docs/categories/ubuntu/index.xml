@@ -6,10 +6,19 @@
     <description>Recent content in Ubuntu on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 13 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://drres.github.io/blogdown/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MACでUbuntu</title>
+      <link>https://drres.github.io/blogdown/post/ubuntu-in-mac/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/ubuntu-in-mac/</guid>
+      <description>設定ファイルのメモ ~/.profileに記載 export PATH=/opt/google/chrome/:~/R-3.4.4/bin:$PATH export RSTUDIO_WHICH_R=~/R-3.4.4/bin/R !may not work in ~/.profile but in ~/.bushrc xmodmap ~/.Xmodmap ~/.Xmodmapに記載 !enable eisuu &amp;amp; kana !must modify mozc property keycode 130 = Hiragana keycode 131 = Muhenkan !exchange control &amp;amp; command clear</description>
+    </item>
     
     <item>
       <title>Install R &amp; RStudio on Ubuntu16.04</title>

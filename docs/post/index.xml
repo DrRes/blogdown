@@ -6,10 +6,73 @@
     <description>Recent content in Posts on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 05 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://drres.github.io/blogdown/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>脂質異常症</title>
+      <link>https://drres.github.io/blogdown/post/dyslipidemia/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/dyslipidemia/</guid>
+      <description>リスク評価をして, リスク群ごとの治療目標値に従って治療を決定するのがセオリー. リスク評価 冠動脈疾患の既往: 2次予防 以下の慢性疾患いずれか: 高</description>
+    </item>
+    
+    <item>
+      <title>不整脈</title>
+      <link>https://drres.github.io/blogdown/post/huseimyaku/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/huseimyaku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>整形救急</title>
+      <link>https://drres.github.io/blogdown/post/seikeikyukyu/</link>
+      <pubDate>Thu, 17 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/seikeikyukyu/</guid>
+      <description>外傷 問診 受傷機転 外力の方向 受傷時の肢位 e.g. Fall On OutStretched Hand: 橈骨遠位端骨折/上腕骨顆上骨折 外力のエネルギー 高エネルギー: 衝突・車の横転・高所からの転落な</description>
+    </item>
+    
+    <item>
+      <title>急性心不全</title>
+      <link>https://drres.github.io/blogdown/post/ahf/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/ahf/</guid>
+      <description>診断基準(Framingham基準) 以下の症状が 大症状2つ以上 大症状1つ+小症状2つ以上 で診断(大症状は大文字) 自覚症状 夜間発作性呼吸困難o</description>
+    </item>
+    
+    <item>
+      <title>ACS</title>
+      <link>https://drres.github.io/blogdown/post/acs/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/acs/</guid>
+      <description>診断 明確な基準なし.事前確率を考慮した上で, 症状 ECG変化 トロポニンT上昇 のうち$\leq$2/3でACS,$\leq$1/3でACSs/o</description>
+    </item>
+    
+    <item>
+      <title>MACでUbuntu</title>
+      <link>https://drres.github.io/blogdown/post/ubuntu-in-mac/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/ubuntu-in-mac/</guid>
+      <description>設定ファイルのメモ ~/.profileに記載 export PATH=/opt/google/chrome/:~/R-3.4.4/bin:$PATH export RSTUDIO_WHICH_R=~/R-3.4.4/bin/R !may not work in ~/.profile but in ~/.bushrc xmodmap ~/.Xmodmap ~/.Xmodmapに記載 !enable eisuu &amp;amp; kana !must modify mozc property keycode 130 = Hiragana keycode 131 = Muhenkan !exchange control &amp;amp; command clear</description>
+    </item>
+    
+    <item>
+      <title>鉄動態</title>
+      <link>https://drres.github.io/blogdown/post/fe-kinetics/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/fe-kinetics/</guid>
+      <description>鉄欠乏 診断基準 TSAT$\leq$20% TSAT: トランスフェリン飽和度 $:= \frac{Fe_{serum}(\mu g/dL)}{TIBC(\mu g/dL)}\times$100 血清フェリチン $\leq$100ng/mL の2つを主に用いて評価。MCVは感度特異度とも不十分</description>
+    </item>
     
     <item>
       <title>SHIROKANEとのデータ送受信</title>
@@ -117,24 +180,6 @@
       
       <guid>https://drres.github.io/blogdown/post/%E6%A0%84%E9%A4%8A%E7%8A%B6%E6%85%8B%E3%81%AE%E8%A9%95%E4%BE%A1/</guid>
       <description>指標 subjective grobal assessment (SGA) objective data assessment (ODA) geriatric nutritional risk index (GNRI) mini nutrition assessment (MNA) SGA 「主観的」なだけあって、問診して身体計測してなんとなく評価。要は普段やってること。 同じ人が測定して変</description>
-    </item>
-    
-    <item>
-      <title>高・低Na血症の鑑別</title>
-      <link>https://drres.github.io/blogdown/post/%E9%AB%98%E4%BD%8Ena%E8%A1%80%E7%97%87%E3%81%AE%E9%91%91%E5%88%A5/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://drres.github.io/blogdown/post/%E9%AB%98%E4%BD%8Ena%E8%A1%80%E7%97%87%E3%81%AE%E9%91%91%E5%88%A5/</guid>
-      <description>低Na血症 偽物を見分ける。 本物? 高張性 血症浸透圧↑（高血糖など）による偽陽性 等張性 高脂血症・高蛋白血症による偽陽性 低張性 本物 低張性の鑑別は？</description>
-    </item>
-    
-    <item>
-      <title>高・低Na血症の鑑別</title>
-      <link>https://drres.github.io/blogdown/post/%E9%AB%98%E4%BD%8Ena%E8%A1%80%E7%97%87%E3%81%AE%E9%91%91%E5%88%A5/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://drres.github.io/blogdown/post/%E9%AB%98%E4%BD%8Ena%E8%A1%80%E7%97%87%E3%81%AE%E9%91%91%E5%88%A5/</guid>
-      <description>低Na血症 偽物を見分ける。 本物? 高張性 血症浸透圧↑（高血糖など）による偽陽性 等張性 高脂血症・高蛋白血症による偽陽性 低張性 本物 低張性の鑑別は？</description>
     </item>
     
     <item>
