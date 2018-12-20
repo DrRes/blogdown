@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://drres.github.io/blogdown/post/2018tidyverse%E3%81%A8r-lib%E6%96%B0%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%BE%E3%81%A8%E3%82%81/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://drres.github.io/blogdown/post/icu/</loc>
+    <lastmod>2018-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://drres.github.io/blogdown/post/pediatrics/</loc>
+    <lastmod>2018-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/post/dyslipidemia/</loc>
     <lastmod>2018-05-18T00:00:00+00:00</lastmod>
   </url>
@@ -124,7 +139,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/</loc>
-    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -149,13 +164,25 @@
   </url>
   
   <url>
+    <loc>https://drres.github.io/blogdown/tags/icu/</loc>
+    <lastmod>2018-10-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://drres.github.io/blogdown/post/</loc>
-    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drres.github.io/blogdown/categories/r/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,6 +223,12 @@
   </url>
   
   <url>
+    <loc>https://drres.github.io/blogdown/tags/%E5%B0%8F%E5%85%90%E7%A7%91/</loc>
+    <lastmod>2018-05-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://drres.github.io/blogdown/tags/%E5%BE%AA%E7%92%B0%E5%99%A8/</loc>
     <lastmod>2018-05-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -203,7 +236,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/tags/%E6%95%91%E6%80%A5/</loc>
-    <lastmod>2018-05-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -239,7 +272,7 @@
   
   <url>
     <loc>https://drres.github.io/blogdown/categories/%E7%A0%94%E4%BF%AE/</loc>
-    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

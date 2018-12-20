@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小児科 on A Notebook</title>
+    <link>https://drres.github.io/blogdown/tags/%E5%B0%8F%E5%85%90%E7%A7%91/</link>
+    <description>Recent content in 小児科 on A Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 31 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://drres.github.io/blogdown/tags/%E5%B0%8F%E5%85%90%E7%A7%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>小児救急</title>
+      <link>https://drres.github.io/blogdown/post/pediatrics/</link>
+      <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://drres.github.io/blogdown/post/pediatrics/</guid>
+      <description>使用可能な薬剤 解熱・鎮痛剤 使えるのは2種類のみ アセトアミノフェン カロナールシロップ: 6ヶ月~1歳 カロナール細粒: 2歳から, ジュースなどに混ぜ</description>
+    </item>
+    
+  </channel>
+</rss>

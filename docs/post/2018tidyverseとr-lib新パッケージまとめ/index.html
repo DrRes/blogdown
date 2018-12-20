@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>2018tidyverseとr-lib新パッケージまとめ</title>
+  <meta property="og:title" content="2018tidyverseとr-lib新パッケージまとめ" />
+  <meta name="twitter:title" content="2018tidyverseとr-lib新パッケージまとめ" />
+  <meta name="description" content="最近はtidyverse.orgのarticleをチェックするのが楽しかったりするんですが, このarticleで2018年は22もの新パッケ">
+  <meta property="og:description" content="最近はtidyverse.orgのarticleをチェックするのが楽しかったりするんですが, このarticleで2018年は22もの新パッケ">
+  <meta name="twitter:description" content="最近はtidyverse.orgのarticleをチェックするのが楽しかったりするんですが, このarticleで2018年は22もの新パッケ">
+  <meta name="author" content="DrRes"/>
+  <link href='https://drres.github.io/blogdown/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://drres.github.io/blogdown/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://drres.github.io/blogdown/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://drres.github.io/blogdown/post/2018tidyverse%E3%81%A8r-lib%E6%96%B0%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%BE%E3%81%A8%E3%82%81/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="A Notebook" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://drres.github.io/blogdown/post/2018tidyverse%E3%81%A8r-lib%E6%96%B0%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%BE%E3%81%A8%E3%82%81/" />
+  <link rel="alternate" href="https://drres.github.io/blogdown/index.xml" type="application/rss+xml" title="A Notebook">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://drres.github.io/blogdown/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://drres.github.io/blogdown/css/highlight.min.css" /><link rel="stylesheet" href="https://drres.github.io/blogdown/css/codeblock.css" />
+
+
+<link rel="stylesheet" href="https://drres.github.io/blogdown/dont_remove/blogdownCSS.css" />
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://drres.github.io/blogdown/">A Notebook</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/blogdown/">Home</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">QuickJump</a>
+              <div class="navlinks-children">
+                
+                  <a href="/blogdown/post/how-to-upload-new-entry/">Write a new entry</a>
+                
+                  <a href="/blogdown/post/opqrst-of-pain/">痛みのOPQRST</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/blogdown/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Categories" href="/blogdown/categories/">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/blogdown/tags/">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="A Notebook" href="https://drres.github.io/blogdown/">
+            <img class="avatar-img" src="https://drres.github.io/blogdown/img/avatar-icon.png" alt="A Notebook" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>2018tidyverseとr-lib新パッケージまとめ</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 20, 2018
+  
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <div id="toc">
+
+</div>
+<p>最近は<a href="tidyverse.org" class="uri">tidyverse.org</a>のarticleをチェックするのが楽しかったりするんですが, <a href="https://www.tidyverse.org/articles/2018/12/tidyverse-and-r-lib-year-in-review/">このarticle</a>で2018年は22もの新パッケージが登場したとまとめられていました.  そこで, 自分の備忘録ついでにまとめておきます. ついでに面白げな関数もメモ.</p>
+<p>不勉強で間違ってるところがあれば修正したいけど, コメント機能つけてないんだよなあ…(blogdownの機能にはあった気がするけど, 作るときにそこまでやる気力がなかった).  </p>
+<div id="vctrs" class="section level3">
+<h3><a href="https://vctrs.r-lib.org/">vctrs</a></h3>
+<p>公式に記載の3つのarticlesを読めばだいたいわかる. 結構長いけど.  それぞれを雑~~につまみ食いしてみる.</p>
+<div id="prototypes-and-sizes" class="section level4">
+<h4>Prototypes and sizes</h4>
+<ul>
+<li><code>vec_ptype()</code>: ベクトルやdata.frameの各列などのクラス(prototype)を教えてくれる</li>
+<li><code>vec_assert()</code>: ベクトルのtypeチェック用関数</li>
+<li><code>vec_cast_common()</code>: なるべく各要素のクラスを合わせてくれる</li>
+<li><code>vec_size()</code>: <code>length()</code>や<code>nrow()</code>を使いやすくして, vector系でないものにはちゃんとエラーも返すようにしたもの</li>
+</ul>
+<pre class="r"><code>a &lt;- 1
+vctrs::vec_assert(a, double())
+tryCatch(vctrs::vec_assert(a, vctrs::vec_type(&quot;1&quot;)), error = function(e) message(e))</code></pre>
+</div>
+<div id="type-and-size-stability" class="section level4">
+<h4>Type and size stability</h4>
+<p><strong>type-stable</strong>とは,</p>
+<ul>
+<li>inputのtypeだけからoutputのtypeがわかる</li>
+<li>inputの順番にoutputのtypeが影響されない</li>
+</ul>
+<p>こと.</p>
+<p><strong>size-stable</strong>とは,</p>
+<ul>
+<li>inputのサイズのみ, またはinputに含まれた数字からoutputのサイズがわかる</li>
+</ul>
+<p>こと.なお, 縛りが現行の関数には厳しすぎるので, sizeをlengthに置き換えた<strong>length-stable</strong>という概念も導入されている.</p>
+<p>例えば, type-unstableな例として, <code>median()</code>が挙げられている. すべての例は公式参照.</p>
+<pre class="r"><code>vctrs::vec_ptype(median(c(1L, 1L)))
+#&gt; Prototype: double
+vctrs::vec_ptype(median(c(1L, 1L,1L)))
+#&gt; Prototype: integer</code></pre>
+<ul>
+<li><code>vec_c()</code>: type-stableかつsize-stableな<code>c()</code>. うまく行かないときはエラーを返してくれる. factorもlevelsの値を保って結合してくれる  <code>c()</code>はcharacter &gt; complex &gt; double &gt; integer &gt; logicalの原則に当てはまるなら大丈夫だが, character vectors, list, non-vectorsについてはうまく行かない上に, とにかく無理やり結合した結果を<strong>エラーなしに</strong>返してしまう.</li>
+</ul>
+</div>
+<div id="s3-vectors" class="section level4">
+<h4>S3 vectors</h4>
+<p>オリジナルのprintやassertメソッドを持ったオレオレS3クラスを実装しよう!的なことを支援する便利関数たち.  S3だとS4と違ってtibbleでの扱いもうまくいく(だったはず)なので, 作りたくなったらまた読んでみてもありかも.</p>
+</div>
+</div>
+<div id="lobstr" class="section level3">
+<h3><a href="https://lobstr.r-lib.org/">lobstr</a></h3>
+<p>*<code>ast()</code>: 関数の構造を<code>str()</code>的に提示してくれる. rlangの理解に使えそう…と思ったけど, <code>sym()</code>とか<code>!!</code>は解決された上で提示されるっぽい.</p>
+<p>rlangについては, <a href="https://teramonagi.hatenablog.com/entry/2018/11/03/225635">この記事</a>がわかりやすいかも.</p>
+<pre class="r"><code>lobstr::ast(a + b * c)
+#&gt; █─`+` 
+#&gt; ├─a 
+#&gt; └─█─`*` 
+#&gt;   ├─b 
+#&gt;   └─c
+df &lt;- tibble(x = 1, y = 2)
+lobstr::ast(df %&gt;% mutate(x = x + 1))
+#&gt; █─`%&gt;%` 
+#&gt; ├─df 
+#&gt; └─█─mutate 
+#&gt;   └─x = █─`+` 
+#&gt;         ├─x 
+#&gt;         └─1
+lobstr::ast(df %&gt;% mutate(!!sym(&quot;x&quot;) := !!sym(&quot;x&quot;) + 1))
+#&gt; █─`%&gt;%` 
+#&gt; ├─df 
+#&gt; └─█─mutate 
+#&gt;   └─█─`:=` 
+#&gt;     ├─x 
+#&gt;     └─█─`+` 
+#&gt;       ├─x 
+#&gt;       └─1</code></pre>
+<ul>
+<li><code>obj_size()</code>: メモリ使用量の表示. 引数全体の使用量を表示.</li>
+<li><p><code>obj_sizes()</code>: 引数全体のメモリ使用量を引数ごとに分割して表示. 重複分は前側の引数に割り当てられるっぽい.</p></li>
+<li><p><code>cst()</code>: stack treeの表示</p></li>
+</ul>
+<p>公式より例を拝借すると,</p>
+<pre class="r"><code>f &lt;- function(x) g(x)
+g &lt;- function(x) h(x)
+h &lt;- function(x) x
+f(lobstr::cst())
+#&gt; █
+#&gt; ├─global::f(lobstr::cst())
+#&gt; │ └─global::g(x)
+#&gt; │   └─global::h(x)
+#&gt; └─lobstr::cst()</code></pre>
+</div>
+<div id="sloop" class="section level3">
+<h3><a href="https://github.com/r-lib/sloop">sloop</a></h3>
+<p>S3のメソッドディスパッチの可視化と, S3とかR6とかを判別してくれる関数たち.  AdvancedR的な本でpryrパッケージみたいに解説用で使われそう.</p>
+<ul>
+<li><code>s3_dispatch()</code>: S3のメソッドディスパッチの可視化</li>
+<li><code>ftype()</code>: S3とかR6とかgenericとかの判別. 関数版.</li>
+<li><code>otype()</code>: S3とかR6とかの判別. object版.</li>
+</ul>
+</div>
+<div id="err" class="section level3">
+<h3><a href="https://poissonconsulting.github.io/err/">err</a></h3>
+<p>オブジェクトの要素数に合わせた文章やエラー文を生成できる. 複数形とか気になるなら調節もできちゃう. いや, sample(s)とかって書けば良くない?って思うけど.  data.frameもよしなに書き下してくれるのはありがたいかな.</p>
+<pre class="r"><code>err::co(datasets::mtcars, conjunction = &quot;and&quot;, oxford = TRUE, ellipsis = 5)
+#&gt; [1] &quot;datasets::mtcars has 11 columns\nmpg: 21, 21, 22.8, ..., and 21.4\ncyl: 6, 6, 4, ..., and 4\ndisp: 160, 160, 108, ..., and 121\n...\nand carb: 4, 4, 1, ..., and 2&quot;</code></pre>
+<p>あとは, 長さが2のベクトルじゃないとダメ!的なときにも使える…? まあ, ふつーに<code>stop()</code>や<code>rlang::abort()</code>使うけども.</p>
+<pre class="r"><code>tryCatch(err::err(err::cn(2), &quot;. try again.&quot;), error = function(e) message(e))</code></pre>
+</div>
+<div id="generics" class="section level3">
+<h3><a href="https://github.com/r-lib/generics">generics</a></h3>
+<p>いろんなパッケージにある, よく他のパッケージでimportされる関数たちをまとめたもの.  これにより, 自作パッケージの依存関係を減らすことができる.  <code>fit()</code>, <code>tidy()</code>, <code>explain()</code>などが収載されている.使うときは,</p>
+<pre class="r"><code>#&#39; @importFrom generics explain</code></pre>
+<p>的なのをどこかの関数の前 (Hadley神のパッケージ作成本的には, パッケージの名前を冠した.Rファイルを作成してそこにまとめることが推奨されてたはず)に書く. exportもしたいなら,</p>
+<pre class="r"><code>#&#39; @importFrom generics explain
+#&#39; @export
+generics::explain</code></pre>
+<p>的に書けばOK.</p>
+</div>
+<div id="carrier" class="section level3">
+<h3><a href="https://github.com/r-lib/carrier">carrier</a></h3>
+<p>リモートRセッションに関数を送るときに関数が依存しているオブジェクト(他の関数も含めて)が送られずにエラーを吐くことがあるけど, おそらくそれを防止するために関数の作成時点でエラーを吐くようにしようぜ, 的なやつ, なのかな? 知らんけど.</p>
+</div>
+<div id="xopen" class="section level3">
+<h3><a href="https://github.com/r-lib/xopen">xopen</a></h3>
+<p>システムファイル(.Rファイルとか)やURLを渡せばよしなに開いてくれる関数<code>xopen()</code>を収載.  開くアプリも指定できる.  ダウンロード数が2018/12/20時点で月間19万ってすごくない?</p>
+</div>
+<div id="ps" class="section level3">
+<h3><a href="http://ps.r-lib.org/">ps</a></h3>
+<p>システムプロセスにアクセスするAPIを提供してくれる.  pythonでいうpsutilのR版.  実行中のプロセス一覧の取得と, 子プロセスや親プロセスなどの情報の取得, プロセスの中断, 再開, 終了などができる.  システムプロセス作成にはprocessxパッケージが使える.  これとfsパッケージがあれば, Rはシステムに弱いとか言われないのでは…!!  pipeline構築にはdrake, configファイル読み込みにはconfigパッケージもあるし, Rででっかいconfigファイル読み込んで, 他言語で書かれたソフトウェア走らせつつRで統合的に管理するpipeline構築できるのでは(というか今構築してる).</p>
+</div>
+<div id="fs" class="section level3">
+<h3><a href="https://fs.r-lib.org/">fs</a></h3>
+<p>ファイル, ディレクトリ, パス, リンクの操作ができる.   それぞれ<code>file_</code>, <code>dir_</code>, <code>path_</code>, <code>link_</code>の接頭辞がついてわかりやすい. </p>
+<p>linuxでいう<code>ls</code>コマンドは<code>dir_ls()</code>関数だったりと, <code>mkdir</code>は<code>dir_create()</code>だったり.  OSによらず統一的な書き方ができるのと, 関数名から機能がわかりやすいのがポイント.  とりあえずインストールして, <code>fs::</code>まで打ち込んで関数一覧をみながらそれっぽい関数名を選んでF1キー押せば使い方がわかるのでゴリゴリ使うべし.</p>
+<p>あと, pathの連結用に<code>path()</code>関数があるのも便利. ずっと<code>stringr::str_c(sep = &quot;/&quot;)</code>使ってて見にくかったのがスッキリして嬉しい.</p>
+<p>他にも, ファイルが存在するか, 読み込み/書き込み可能かの取得だったり, 絶対パスへの変換だったりと欲しい機能が詰まっている.</p>
+</div>
+<div id="pkgload-pkgbuild" class="section level3">
+<h3><a href="https://github.com/r-lib/pkgload">pkgload</a>, <a href="https://github.com/r-lib/pkgbuild">pkgbuild</a></h3>
+<p>devtoolsパッケージが大きくなりすぎたから, 機能ごとにdevtoolsをいくつかのパッケージ群に分割したものの1つ.  今の所, とりあえずdevtools使ってる.</p>
+<p>ちなみに, devtoolsを分割したパッケージのリストは以下. <a href="https://github.com/r-lib/devtools#conscious-uncoupling">公式</a>から転載.</p>
+<ul>
+<li><p>testthat: Writing and running tests (i.e. <code>test()</code>).</p></li>
+<li><p>roxygen2: Function and package documentation (i.e. <code>document()</code>).</p></li>
+<li><p>remotes: Installing packages (i.e. <code>install_github()</code>).</p></li>
+<li><p>pkgbuild: Building binary packages (including checking if build tools are available) (i.e. <code>build()</code>).</p></li>
+<li><p>pkgload: Simulating package loading (i.e. <code>load_all()</code>).</p></li>
+<li><p>rcmdcheck: Running R CMD check and reporting the results (i.e. <code>check()</code>).</p></li>
+<li><p>revdepcheck: Running R CMD check on all reverse dependencies, and figuring out what’s changed since the last CRAN release (i.e. <code>revdep_check()</code>).</p></li>
+<li><p>sessioninfo: R session info (i.e. <code>session_info()</code>).</p></li>
+<li><p>usethis: Automating package setup (i.e. <code>use_test()</code>).</p></li>
+</ul>
+</div>
+<div id="conflicted" class="section level3">
+<h3><a href="https://github.com/r-lib/conflicted">conflicted</a></h3>
+<p>例えば<code>dplyr::filter()</code>と<code>stats::filter()</code>みたいに名前の衝突があった時に, どちらを使うか指定しない限りエラーを返すようにするパッケージ.  <code>library()</code>や<code>pacman::p_load()</code>の順番で先にロードされたパッケージの関数が知らないうちにマスクされてしまって, 意図しない関数を使っていた…なんてことを防げる.  <code>filter()</code>とか1度dplyrのを使うって設定してしまえば使い回せて楽なんだろうけどな…そのうち導入するつもり.  たしか日本語でもオススメしてる記事?スライド?をどなたかがかかれていたような…(調べ直す気力が潰えた顔)</p>
+</div>
+<div id="bench" class="section level3">
+<h3><a href="https://github.com/r-lib/bench">bench</a></h3>
+<p>同じ結果を返す複数の関数があったときに, どれが速いか気になりません?  <code>apply</code>系と<code>purrr::map</code>系の比較とか, dplyr0.8.0でいえば<code>dplyr::group_map</code>と<code>tidyr::nest() %&gt;% purrr::map() %&gt;% tidyr::unnest()</code>の比較とか.  そんなときに, てきとーな繰り返し回数で速度比べをしてくれるのが<code>bench::mark()</code>.  結果はtibble形式で出力されて, <code>summary()</code>でまとめられるし, <code>ggplot2::autoplot()</code>に突っ込めばいい感じの図を書いてくれる. プロットの種類が気に入らなければ, boxplotとかは簡単に指定できるっぽい. いや, 普通にggplot2使えばいいだけなんだけど.  パラメーターをグリッドでいじりつつ速度比べしてくれる<code>bench::press()</code>もある.  <code>microbenchmark::microbenchmark()</code>も似たようなことやってくれるっぽいけど, ネーミングセンスを感じるからこっちのが個人的に好きかも.</p>
+</div>
+<div id="pkgdown" class="section level3">
+<h3><a href="https://pkgdown.r-lib.org/">pkgdown</a></h3>
+<p>パッケージを公開するときに, パッケージ用のサイトをgithubとかに作るのを支援してくれる.  そのうち使いたいことだなあ…</p>
+</div>
+<div id="conf" class="section level3">
+<h3><a href="https://github.com/r-lib/conf">conf</a></h3>
+<p>パッケージのconfigをyaml形式で書いてくれる. どういう使いどころがあるかはまだあまりわかってないです…</p>
+</div>
+<div id="filelock" class="section level3">
+<h3><a href="https://github.com/r-lib/filelock">filelock</a></h3>
+<p>その名の通り, fileを指定したプロセス専用にロックしてくれる. linuxとwindowsで内部で使っているコマンドが違うっぽい.</p>
+</div>
+<div id="showimage" class="section level3">
+<h3><a href="https://github.com/r-lib/showimage">showimage</a></h3>
+<p>画像をR上で表示してくれる. Rmdで画像を保存して, さらにそれを表示するといったときに使えるっぽい.  たしかに, 画像の生成がめちゃ重たい場合とかには重宝しそう.  ただし, 2018/12/20時点でpngしか対応していない.</p>
+</div>
+<div id="tidymodels" class="section level3">
+<h3><a href="https://github.com/tidymodels/tidymodels">tidymodels</a></h3>
+<p>tidyverse的なメタパッケージ.  broomとかrecipesとか使って可読性と再現可能性の高いモデリングをしようぜ!的なやつ. 知らんけど.  有名なパッケージについては界隈で有名などなたかが書かれた日本語解説記事があるはず.</p>
+</div>
+<div id="parsnip." class="section level3">
+<h3><a href="https://tidymodels.github.io/parsnip/">parsnip</a>.</h3>
+<p>tidymodels関連パッケージ群の1つ.  いろんなパッケージ由来のモデルを統一的に扱おう, 的なやつ.</p>
+</div>
+<div id="embed" class="section level3">
+<h3><a href="https://tidymodels.github.io/embed/">embed</a></h3>
+<p>tidymodels関連パッケージ群の1つ.   recipesパッケージの補助的な立ち位置. categorical predictorsの前処理に使える.</p>
+</div>
+<div id="dials" class="section level3">
+<h3><a href="https://tidymodels.github.io/dials/">dials</a></h3>
+<p>tidymodels関連パッケージ群の1つ.   パラメータチューニングに使える. parsnipパッケージと相性がいいらしい.</p>
+</div>
+<div id="infer" class="section level3">
+<h3><a href="https://infer.netlify.com/">infer</a></h3>
+<p>tidymodels関連パッケージ群の1つ.  帰無仮説に基づいた分布をbootstrapなどの繰り返し試行で生成して, 統計学的有意差があるかを判定するといったことができる.  分布を可視化できるのと, pipe-friendlyで統一された書き方ができるのが強み.  t-testとかは繰り返し試行しなくても同じ文法でやってくれるっぽい. 詳しくは公式のvignette参照.</p>
+</div>
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://drres.github.io/blogdown/post/icu/" data-toggle="tooltip" data-placement="top" title="ICU">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              DrRes
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://drres.github.io/blogdown/">A Notebook</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://drres.github.io/blogdown/js/main.js"></script>
+<script src="https://drres.github.io/blogdown/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://drres.github.io/blogdown/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+<script src="https://drres.github.io/blogdown/dont_remove/jquery.toc.js"></script>
+<script>
+$(function(){
+    $("body").toc();
+});
+</script>
+
+
+  </body>
+</html>
+

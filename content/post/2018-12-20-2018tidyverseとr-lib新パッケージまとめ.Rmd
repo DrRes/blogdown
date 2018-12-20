@@ -1,0 +1,261 @@
+---
+title: 2018tidyverseとr-lib新パッケージまとめ
+author: ~
+date: '2018-12-20'
+slug: 2018tidyverseとr-lib新パッケージまとめ
+categories: ["R"]
+tags: []
+subtitle: ''
+---
+
+<div id="toc"></div>
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
+pacman::p_load(tidyverse, DT, data.table, knitr, rmarkdown, blogdown, formattable)
+```
+
+最近は[tidyverse.org](tidyverse.org)のarticleをチェックするのが楽しかったりするんですが, [このarticle](https://www.tidyverse.org/articles/2018/12/tidyverse-and-r-lib-year-in-review/)で2018年は22もの新パッケージが登場したとまとめられていました.\ 
+そこで, 自分の備忘録ついでにまとめておきます. ついでに面白げな関数もメモ.
+
+不勉強で間違ってるところがあれば修正したいけど, コメント機能つけてないんだよなあ...(blogdownの機能にはあった気がするけど, 作るときにそこまでやる気力がなかった). \ 
+
+
+### [vctrs](https://vctrs.r-lib.org/)
+
+公式に記載の3つのarticlesを読めばだいたいわかる. 結構長いけど.\  
+それぞれを雑~~につまみ食いしてみる. 
+
+#### Prototypes and sizes
+
+* `vec_ptype()`: ベクトルやdata.frameの各列などのクラス(prototype)を教えてくれる
+* `vec_assert()`: ベクトルのtypeチェック用関数
+* `vec_cast_common()`: なるべく各要素のクラスを合わせてくれる
+* `vec_size()`: `length()`や`nrow()`を使いやすくして, vector系でないものにはちゃんとエラーも返すようにしたもの
+
+```{r}
+a <- 1
+vctrs::vec_assert(a, double())
+tryCatch(vctrs::vec_assert(a, vctrs::vec_type("1")), error = function(e) message(e))
+```
+
+#### Type and size stability
+
+**type-stable**とは, 
+
+ * inputのtypeだけからoutputのtypeがわかる
+ * inputの順番にoutputのtypeが影響されない
+ 
+ こと.
+ 
+ **size-stable**とは, 
+ 
+ * inputのサイズのみ, またはinputに含まれた数字からoutputのサイズがわかる
+ 
+ こと.なお, 縛りが現行の関数には厳しすぎるので, sizeをlengthに置き換えた**length-stable**という概念も導入されている.
+
+例えば, type-unstableな例として, `median()`が挙げられている. すべての例は公式参照.
+
+```{r}
+vctrs::vec_ptype(median(c(1L, 1L)))
+vctrs::vec_ptype(median(c(1L, 1L,1L)))
+```
+
+* `vec_c()`: type-stableかつsize-stableな`c()`. うまく行かないときはエラーを返してくれる. factorもlevelsの値を保って結合してくれる\ 
+`c()`はcharacter > complex > double > integer > logicalの原則に当てはまるなら大丈夫だが, character vectors, list, non-vectorsについてはうまく行かない上に, とにかく無理やり結合した結果を**エラーなしに**返してしまう.
+
+#### S3 vectors
+
+オリジナルのprintやassertメソッドを持ったオレオレS3クラスを実装しよう!的なことを支援する便利関数たち.\ 
+S3だとS4と違ってtibbleでの扱いもうまくいく(だったはず)なので, 作りたくなったらまた読んでみてもありかも.
+
+### [lobstr](https://lobstr.r-lib.org/)
+
+*`ast()`: 関数の構造を`str()`的に提示してくれる. rlangの理解に使えそう...と思ったけど, `sym()`とか`!!`は解決された上で提示されるっぽい.
+
+rlangについては, [この記事](https://teramonagi.hatenablog.com/entry/2018/11/03/225635)がわかりやすいかも.
+
+```{r}
+lobstr::ast(a + b * c)
+df <- tibble(x = 1, y = 2)
+lobstr::ast(df %>% mutate(x = x + 1))
+lobstr::ast(df %>% mutate(!!sym("x") := !!sym("x") + 1))
+```
+
+* `obj_size()`: メモリ使用量の表示. 引数全体の使用量を表示.
+* `obj_sizes()`: 引数全体のメモリ使用量を引数ごとに分割して表示. 重複分は前側の引数に割り当てられるっぽい.
+
+* `cst()`: stack treeの表示
+
+公式より例を拝借すると, 
+```{r}
+f <- function(x) g(x)
+g <- function(x) h(x)
+h <- function(x) x
+f(lobstr::cst())
+```
+
+
+### [sloop](https://github.com/r-lib/sloop)
+
+S3のメソッドディスパッチの可視化と, S3とかR6とかを判別してくれる関数たち.\ 
+AdvancedR的な本でpryrパッケージみたいに解説用で使われそう.
+
+* `s3_dispatch()`: S3のメソッドディスパッチの可視化
+* `ftype()`: S3とかR6とかgenericとかの判別. 関数版.
+* `otype()`: S3とかR6とかの判別. object版.
+
+### [err](https://poissonconsulting.github.io/err/)
+
+オブジェクトの要素数に合わせた文章やエラー文を生成できる. 複数形とか気になるなら調節もできちゃう. いや, sample(s)とかって書けば良くない?って思うけど.\ 
+data.frameもよしなに書き下してくれるのはありがたいかな.
+
+```{r}
+err::co(datasets::mtcars, conjunction = "and", oxford = TRUE, ellipsis = 5)
+```
+
+あとは, 長さが2のベクトルじゃないとダメ!的なときにも使える...? まあ, ふつーに`stop()`や`rlang::abort()`使うけども.
+
+```{r}
+tryCatch(err::err(err::cn(2), ". try again."), error = function(e) message(e))
+```
+
+### [generics](https://github.com/r-lib/generics)
+
+いろんなパッケージにある, よく他のパッケージでimportされる関数たちをまとめたもの.\ 
+これにより, 自作パッケージの依存関係を減らすことができる.\ 
+`fit()`, `tidy()`, `explain()`などが収載されている.使うときは, 
+
+```{r, eval = FALSE}
+#' @importFrom generics explain
+```
+
+的なのをどこかの関数の前 (Hadley神のパッケージ作成本的には, パッケージの名前を冠した.Rファイルを作成してそこにまとめることが推奨されてたはず)に書く.
+exportもしたいなら, 
+
+```{r, eval = FALSE}
+#' @importFrom generics explain
+#' @export
+generics::explain
+```
+
+的に書けばOK.
+
+### [carrier](https://github.com/r-lib/carrier)
+
+リモートRセッションに関数を送るときに関数が依存しているオブジェクト(他の関数も含めて)が送られずにエラーを吐くことがあるけど, おそらくそれを防止するために関数の作成時点でエラーを吐くようにしようぜ, 的なやつ, なのかな? 知らんけど.
+
+### [xopen](https://github.com/r-lib/xopen)
+
+システムファイル(.Rファイルとか)やURLを渡せばよしなに開いてくれる関数`xopen()`を収載.\ 
+開くアプリも指定できる.\ 
+ダウンロード数が2018/12/20時点で月間19万ってすごくない?
+
+### [ps](http://ps.r-lib.org/)
+
+システムプロセスにアクセスするAPIを提供してくれる.\ 
+pythonでいうpsutilのR版.\ 
+実行中のプロセス一覧の取得と, 子プロセスや親プロセスなどの情報の取得, プロセスの中断, 再開, 終了などができる.\ 
+システムプロセス作成にはprocessxパッケージが使える.\ 
+これとfsパッケージがあれば, Rはシステムに弱いとか言われないのでは...!!\ 
+pipeline構築にはdrake, configファイル読み込みにはconfigパッケージもあるし, Rででっかいconfigファイル読み込んで, 他言語で書かれたソフトウェア走らせつつRで統合的に管理するpipeline構築できるのでは(というか今構築してる).
+
+### [fs](https://fs.r-lib.org/)
+
+ファイル, ディレクトリ, パス, リンクの操作ができる. \ 
+それぞれ`file_`, `dir_`, `path_`, `link_`の接頭辞がついてわかりやすい.\ 
+
+linuxでいう`ls`コマンドは`dir_ls()`関数だったりと, `mkdir`は`dir_create()`だったり.\ 
+OSによらず統一的な書き方ができるのと, 関数名から機能がわかりやすいのがポイント.\ 
+とりあえずインストールして, `fs::`まで打ち込んで関数一覧をみながらそれっぽい関数名を選んでF1キー押せば使い方がわかるのでゴリゴリ使うべし.
+
+あと, pathの連結用に`path()`関数があるのも便利. ずっと`stringr::str_c(sep = "/")`使ってて見にくかったのがスッキリして嬉しい.
+
+他にも, ファイルが存在するか, 読み込み/書き込み可能かの取得だったり, 絶対パスへの変換だったりと欲しい機能が詰まっている.
+
+### [pkgload](https://github.com/r-lib/pkgload), [pkgbuild](https://github.com/r-lib/pkgbuild)
+
+devtoolsパッケージが大きくなりすぎたから, 機能ごとにdevtoolsをいくつかのパッケージ群に分割したものの1つ.\ 
+今の所, とりあえずdevtools使ってる.
+
+ちなみに, devtoolsを分割したパッケージのリストは以下. [公式](https://github.com/r-lib/devtools#conscious-uncoupling)から転載.
+
+* testthat: Writing and running tests (i.e. `test()`).
+
+* roxygen2: Function and package documentation (i.e. `document()`).
+
+* remotes: Installing packages (i.e. `install_github()`).
+
+* pkgbuild: Building binary packages (including checking if build tools are available) (i.e. `build()`).
+
+* pkgload: Simulating package loading (i.e. `load_all()`).
+
+* rcmdcheck: Running R CMD check and reporting the results (i.e. `check()`).
+
+* revdepcheck: Running R CMD check on all reverse dependencies, and figuring out what's changed since the last CRAN release (i.e. `revdep_check()`).
+
+* sessioninfo: R session info (i.e. `session_info()`).
+
+* usethis: Automating package setup (i.e. `use_test()`).
+
+### [conflicted](https://github.com/r-lib/conflicted)
+
+例えば`dplyr::filter()`と`stats::filter()`みたいに名前の衝突があった時に, どちらを使うか指定しない限りエラーを返すようにするパッケージ.\ 
+`library()`や`pacman::p_load()`の順番で先にロードされたパッケージの関数が知らないうちにマスクされてしまって, 意図しない関数を使っていた...なんてことを防げる.\ 
+`filter()`とか1度dplyrのを使うって設定してしまえば使い回せて楽なんだろうけどな...そのうち導入するつもり.\ 
+たしか日本語でもオススメしてる記事?スライド?をどなたかがかかれていたような...(調べ直す気力が潰えた顔)
+
+### [bench](https://github.com/r-lib/bench)
+
+同じ結果を返す複数の関数があったときに, どれが速いか気になりません?\ 
+`apply`系と`purrr::map`系の比較とか, dplyr0.8.0でいえば`dplyr::group_map`と`tidyr::nest() %>% purrr::map() %>% tidyr::unnest()`の比較とか.\ 
+そんなときに, てきとーな繰り返し回数で速度比べをしてくれるのが`bench::mark()`.\ 
+結果はtibble形式で出力されて, `summary()`でまとめられるし, `ggplot2::autoplot()`に突っ込めばいい感じの図を書いてくれる. プロットの種類が気に入らなければ, boxplotとかは簡単に指定できるっぽい. いや, 普通にggplot2使えばいいだけなんだけど.\ 
+パラメーターをグリッドでいじりつつ速度比べしてくれる`bench::press()`もある.\ 
+`microbenchmark::microbenchmark()`も似たようなことやってくれるっぽいけど, ネーミングセンスを感じるからこっちのが個人的に好きかも.
+
+### [pkgdown](https://pkgdown.r-lib.org/)
+
+パッケージを公開するときに, パッケージ用のサイトをgithubとかに作るのを支援してくれる.\ 
+そのうち使いたいことだなあ...
+
+### [conf](https://github.com/r-lib/conf)
+
+パッケージのconfigをyaml形式で書いてくれる. どういう使いどころがあるかはまだあまりわかってないです...
+
+### [filelock](https://github.com/r-lib/filelock)
+
+その名の通り, fileを指定したプロセス専用にロックしてくれる. linuxとwindowsで内部で使っているコマンドが違うっぽい.
+
+### [showimage](https://github.com/r-lib/showimage)
+
+画像をR上で表示してくれる. Rmdで画像を保存して, さらにそれを表示するといったときに使えるっぽい.\ 
+たしかに, 画像の生成がめちゃ重たい場合とかには重宝しそう.\ 
+ただし, 2018/12/20時点でpngしか対応していない.
+
+### [tidymodels](https://github.com/tidymodels/tidymodels)
+
+tidyverse的なメタパッケージ.\ 
+broomとかrecipesとか使って可読性と再現可能性の高いモデリングをしようぜ!的なやつ. 知らんけど.\  有名なパッケージについては界隈で有名などなたかが書かれた日本語解説記事があるはず.
+
+### [parsnip](https://tidymodels.github.io/parsnip/).
+
+tidymodels関連パッケージ群の1つ.\ 
+いろんなパッケージ由来のモデルを統一的に扱おう, 的なやつ.
+
+### [embed](https://tidymodels.github.io/embed/)
+
+tidymodels関連パッケージ群の1つ. \ 
+recipesパッケージの補助的な立ち位置. categorical predictorsの前処理に使える.
+
+### [dials](https://tidymodels.github.io/dials/)
+
+tidymodels関連パッケージ群の1つ. \ 
+パラメータチューニングに使える. parsnipパッケージと相性がいいらしい.
+
+### [infer](https://infer.netlify.com/)
+
+tidymodels関連パッケージ群の1つ.\ 
+帰無仮説に基づいた分布をbootstrapなどの繰り返し試行で生成して, 統計学的有意差があるかを判定するといったことができる.\ 
+分布を可視化できるのと, pipe-friendlyで統一された書き方ができるのが強み.\ 
+t-testとかは繰り返し試行しなくても同じ文法でやってくれるっぽい. 詳しくは公式のvignette参照.

@@ -6,18 +6,18 @@
     <description>Recent content in R on A Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 13 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://drres.github.io/blogdown/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How to Use RStudio on SHIROKANE</title>
-      <link>https://drres.github.io/blogdown/post/shirokane/</link>
-      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      <title>2018tidyverseとr-lib新パッケージまとめ</title>
+      <link>https://drres.github.io/blogdown/post/2018tidyverse%E3%81%A8r-lib%E6%96%B0%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://drres.github.io/blogdown/post/shirokane/</guid>
-      <description>from Windows 起動方法 XLaunch起動 TeraTerm 起動 新しい接続： ホスト：slogin.hgc.jp 次へ ユーザ名：sn&amp;hellip;. パスフレーズ：&amp;hel</description>
+      <guid>https://drres.github.io/blogdown/post/2018tidyverse%E3%81%A8r-lib%E6%96%B0%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <description>最近はtidyverse.orgのarticleをチェックするのが楽しかったりするんですが, このarticleで2018年は22もの新パッケ</description>
     </item>
     
   </channel>
